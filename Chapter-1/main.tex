@@ -2,5 +2,84 @@
 
 % \vspace{-5pt}
 \section{Motivation}\label{sec:ch1:intro}
-Micro air vehicles (MAVs\footnote{We use the terms MAV, unmanned aerial vehicle (UAV), and drone interchangeably.}) are entering our daily life for a variety of applications including surveillance, search-and-rescue~\cite{modares-icra17}, emergency first response, package delivery, environmental monitoring, and precision agriculture.
-However, designing multi-drone networks and applications poses numerous inter-disciplinary challenges because the underlying communications and networking problems cannot be explored independently from aero-mechanical, sensing, control, embedded systems, and robotics challenges~\cite{jmod2016poster, jmod2016demo}.
+
+Within this dissertation, I provide a measurement of the differential jet cross section, as a function of the jet mass and transverse momentum, in events with a Z + Jet topology, with and without a jet grooming algorithm applied, using data collected by CMS experiment at LHC. The jet grooming used was the ``Soft Drop''
+procedure 
+%~\cite{softdrop}, wuth multiple values of the tunable parameters $\beta$ and $z_{cut}$. This represents the first, to my knowledge, measurement of it's kind with a light quark enriched jet sample at $\sqrt{s}$ = 13 TeV. 
+
+Softdrop iteratively declusters a jet $j$ with distance parameter $R$ into two subjets, $j_1$ and $j_2$.
+If the softdrop condition
+
+\begin{equation}
+  \frac{\min(p_{T1},p_{T2})}{p_{T1}+p_{T2}} > z_{cut} \cdot (\frac{\Delta R_{12}}{R})^\beta
+\end{equation}
+
+is met, then the procedure stops and $j$ is the final jet. Otherwise, the declustering continues - 
+the higher $pt$ subjet is relabeled as $j$ and the lower $pt$ one is dropped.
+By design, this condition fails for wide-angle soft radiation, which is therefore removed by the soft
+drop procedure. The tunable parameters, $\beta$ and $z_{cut}$, control the degree of jet grooming:
+$\beta$ tunes the algorithm's sensitivity to wide-angle radiation, while $z_{cut}$ sets the energy scale
+of the grooming. In the case of $\beta \rightarrow \infty$, an ungroomed jet is returned. 
+In the $\beta = 0$ case, the soft drop procedure is identical to the ``modified mass drop tagger'' (MMDT)
+from Ref.
+%~\cite{mmdt}. The soft drop algorithm removes soft and wide-angle radiation
+from jets in a very theoretically controlled manner, making it suitable to separate
+the ``hard'' and ``soft'' parts of the jet. Specifically, the soft drop
+algorithm can remove non-global logarithms from correlations of
+radiation within and between jets, which are extremely difficult to
+compute theoretically
+%~\cite{Dasgupta:2001sh,mmdt,softdrop,Dasgupta:2013via,Dasgupta:2015yua,Larkoski:2015zka}.
+
+Comparing the production cross section for groomed and ungroomed jets separately allows us to
+gain sensitivity to both the ``hard'' and ``soft'' jet physics. 
+The groomed cross section can be directly compared to theoretical calculations of the jet mass
+now and in the future, which is a very active area of theoretical research
+at this time
+%~\cite{Dasgupta:2012hg,Chien:2012ur,Jouttenus:2013hs,Almeida:2014uva,Liu:2014oog,Stewart:2014nna,Khelifa-Kerfa:2015mma,Frye:2016aiz,Kolodrubetz:2016dzb}. Furthermore, separating the hard and soft jet physics
+allows a deeper understanding of the various effects involved in QCD
+%radiation. In particular, Ref.~\cite{Frye:2016aiz} calculates the
+groomed jet mass at next-to-next-to-leading order using soft colinear effective theory, matched to a
+%parton shower at leading order using {\tt MCFM}~\cite{MCFM1,MCFM2}, and the authors of Ref.~\cite{mmdt} have
+provided a next-to-leading logarithm calculation with traditional perturbative QCD, matched to a 
+parton shower at leading order, also using {tt MCFM}.  We compare these theoretical predictions 
+to our data in this paper for the first time in this channel at CMS. Both CMS and ATLAS have similar measurements in a dijet sample at %Ref.~\cite{cms_jetmassDijet, atlas_jetmass2}.
+
+The analysis strategy is similar to that of %Ref.~\cite{cms_jetmassDijet}.
+However, there are several differences. As in that paper, the cross section is also
+unfolded in both jet mass and $pt$, however we also provide the measurement in jet $\rho$, dimensionless mass , and $pt$. While the previous measurement considered only one value for the soft drop parameter $\beta$, this analysis considers several.
+We apply the soft drop algorithm to compare
+directly to theoretical computations. Additionally, we not only measure the cross section as a function of mass, but also as a function of dimensionless mass, $\rho = 2log(m/(pt R))$, as is also done in the previously mentioned ATLAS measurement.  The dimensionless mass $\rho$ only weakly depends on $pt$, unlike mass, which is highly correlated. Additionally, the use of this variable aids in the separation of fixed order, perturbative and non-perturbative effects.
+Finally, we also present the normalized differential cross section. We compute the cross sections normalized per $pt$ bin
+(the ``normalized'' cross section) with respect to the jet $pt$ and jet mass 
+by unfolding a binned two-dimensional distribution in $pt$ and mass
+with widths $\Delta pt$ and $\Delta m$, respectively.
+
+The normalized differential cross section in two forms :
+
+\begin{equation}
+\frac{1}{d\sigma/dpt}\frac{d^2\sigma}{dpt\,dm} = \frac{1}{N/\Delta pt} R(\frac{N_{ij}}{ \Delta pt \,\Delta m} )
+\end{equation}
+
+
+as well as :
+
+\begin{equation}
+\frac{1}{d\sigma/dpt}\frac{d^2\sigma}{dpt\,d\rho} = \frac{1}{N/\Delta pt} R(\frac{N_{ij}}{ \Delta pt \,\Delta \rho} )
+\end{equation}
+
+
+where $N$ is the total number of $Z+$jets events in our selection,
+$N_{ij}$ is the number of such events in $pt$ bin $i$ and mass ($\rho$) bin $j$,
+and $R(\alpha)$ is the unfolding procedure applied to the two-dimensional
+distribution $\alpha$.
+
+The 2 above normalized distributions are provided within for ungroomed  and groomed jets Anti-Kt Radious R$= 0.8$ jets. The groomed measurement is given in 9 configurations, one measurement is shown for jets groomed with every combination of 3 possible $\beta$ and $z_{cut}$ values (Where $\beta$ = 0 and $z_{cut}$ = 0 .1 is the current CMS default ):
+
+
+$ \beta = [ 1,  0 , -1 ]  $
+
+$ z_{cut}  = [ 0.15, 0.1, 0.05 ] $ 
+
+
+These measurements currently represent humanity's highest energy measurement of a light quark enriched jet production cross section.
+

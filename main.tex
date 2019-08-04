@@ -142,10 +142,10 @@
 % who want to use it.
 %
 % To use the hyperref package, uncomment the following line:
-\usepackage[colorlinks=true,urlcolor=purple,citecolor=green,linkcolor=blue]{hyperref}
+%\usepackage[colorlinks=true,urlcolor=purple,citecolor=green,linkcolor=blue]{hyperref}
 %
 % Note that you should also uncomment the following line:
-\renewcommand{\theHchapter}{\thepart.\thechapter}
+%\renewcommand{\theHchapter}{\thepart.\thechapter}
 %
 % to work around some problem hyperref has with the fact
 % the psuthesis class has unnumbered pages after which page
@@ -173,21 +173,21 @@
 % FRONT-MATTER %
 %%%%%%%%%%%%%%%%
 % Title
-\title{Designing Multi-Drone Networks and Applications}
+\title{Measurement of the double differential jet production cross section with respect to jet mass and transverse momentum in Z + Jet events from proton - proton collisions at $\sqrt{s}$ = 13 TeV using the CMS detector at LHC}
 
 % Author and Date of Degree Conferral or Defense
-\author{SayedJalil Modares Najafabadi}
+\author{Ashley Marie Parker}
 % the degree will be conferred on this date
-\degreedate{March 2017}
+\degreedate{August 2019}
 % year of your copyright. I have removed this from the cover page because UB's guidelines do not include it.
-\copyrightyear{2017}
+%\copyrightyear{2019}
 
 % This is the document type. For example, this could also be:
 %     Comprehensive Document
 %     Thesis Proposal
 \documenttype{Disseration}
 %The department where you will be submitting the document%
-\dept{Department of Electrical Engineering}
+\dept{Department of Physics}
 % This will generally be The Graduate School, though you can
 % put anything in here to suit your needs. This has also been removes from the cover page via the psuthesis.cls document because UB guidelines do not allow for it.
 \submittedto{The Graduate School}
@@ -206,20 +206,19 @@
 % Input reader information below. The optional argument, which
 % comes first, goes on the second line before the name.
 \advisor[Thesis Advisor, Chair of Committee]
-        {Nicholas Mastronarde}
-        {Professor of Electrical Engineering}
+        {Salvatore Rappoccio}
+        {Professor of Physics}
 
 \readerone[Committee Member]
-          {Dimitris Pados}
-          {Professor of Electrical Engineering}
+          {Ia Iashvili}
+          {Professor of  Physics}
 
 \readertwo[Committee Member]
-          {Weifeng Su}
-          {Professor of Electrical Engineering}
+          {Ciaran Williams}
+          {Professor of  Physics}
 
-\readerthree[Committee Member]
-            {Josep M. Jornet}
-            {Professor of Electrical Engineering}
+
+
 
 % Makes use of LaTeX's include facility. Add as many chapters
 % and appendices as you like.
@@ -237,6 +236,7 @@ Appendix-B/main%
 % THE BEGINNING %
 %%%%%%%%%%%%%%%%%
 \begin{document}
+
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Preliminary Material %
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -260,6 +260,9 @@ Appendix-B/main%
 % thesis.
 %\psusigpage
 
+\pagestyle{plain}
+\pagenumbering{roman}
+
 % Generates the title page based on info you have provided
 % above.
 \psutitlepage
@@ -276,11 +279,11 @@ Appendix-B/main%
 % Generates the Epigraph/Dedication. The first argument should
 % point to the file containing your Epigraph/Dedication and
 % the second argument should be the title of this page.
-\thesisdedication{SupplementaryMaterial/Dedication}{Dedication}
+%\thesisdedication{SupplementaryMaterial/Dedication}{Dedication}
 
 % Generates the Acknowledgments. The argument should point to
 % the file containing your Acknowledgments.
-\thesisacknowledgments{SupplementaryMaterial/Acknowledgments}
+%\thesisacknowledgments{SupplementaryMaterial/Acknowledgments}
 
 % Generates the Table of Contents
 \thesistableofcontents
@@ -299,6 +302,8 @@ Appendix-B/main%
 % file containing your abstract.
 \thesisabstract{SupplementaryMaterial/Abstract}
 
+
+\pagenumbering{arabic}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This command is needed to get the main part of the %
@@ -330,9 +335,9 @@ Appendix-B/main%
 % \addtocontents if you want things to appear the proper
 % sequence. Since the PSU Grad School requires
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\appendix
-\include{Appendix-A/main}
-\include{Appendix-B/main}
+%\appendix
+%\include{Appendix-A/main}
+%\include{Appendix-B/main}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ESM students need to include a Nontechnical Abstract as the %
 % last appendix.                                              %

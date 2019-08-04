@@ -184,6 +184,7 @@
 \setlength{\textheight}{8.60in}
 \setlength{\textwidth}{5.8in}
 
+\pagenumbering{arabic}
 % Set the baselinestretch using the setspace package.
 % The LaTeX Companion claims that a \baselinestretch of
 % 1.24 gives one-and-a-half line spacing, which is allowed
@@ -309,7 +310,7 @@
 % input in the main file using the \numberofreaders command.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\psu@readers}{4}
+\newcommand{\psu@readers}{3}
 \providecommand{\numberofreaders}[1]{\renewcommand{\psu@readers}{#1}}
 
 
