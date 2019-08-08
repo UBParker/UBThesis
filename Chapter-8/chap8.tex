@@ -1,9 +1,51 @@
-\chapter{Introduction}\label{chap:intro}
+\chapter{Event Reconstruction}\label{chap:reco}
+
+%\input{Chapter-3/Part-1/intro}
+
+
 
 % \vspace{-5pt}
-\section{Motivation}\label{sec:ch1:intro}
+\section{Particle Flow Algorithm}\label{sec:ch3:PFlow}
 
-Within this dissertation, I provide a measurement of the differential jet cross section, as a function of the jet mass and transverse momentum, in events with a Z + Jet topology, with and without a jet grooming algorithm applied, using data collected by CMS experiment at LHC. The jet grooming used was the ``Soft Drop''
+Particle Flow is an algorithm which combines information from various CMS subdetectors and allows for a determination of the particle type based on observed properties.
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%% NEW SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Jet Clustering Algorithm}
+\label{sec:ch3:clusering}
+
+Jet definitions IRC safe
+Anti-Kt, Cambridge-aachen...
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%% NEW SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Jet Grooming Algorithm}
+\label{sec:ch3:grooming}
+
+
+Jet grooming, soft drop explantion (PERHAOS MOVE DETAILS on soft drop FROM INTRO TO HERE )
+
+
+Soft Drop
+
+
+
+, with and without a jet grooming algorithm applied,
+The jet grooming used was the ``Soft Drop''
 procedure 
 %~\cite{softdrop}, wuth multiple values of the tunable parameters $\beta$ and $z_{cut}$. This represents the first, to my knowledge, measurement of it's kind with a light quark enriched jet sample at $\sqrt{s}$ = 13 TeV. 
 
@@ -46,7 +88,7 @@ to our data in this paper for the first time in this channel at CMS. Both CMS an
 
 The analysis strategy is similar to that of %Ref.~\cite{cms_jetmassDijet}.
 However, there are several differences. As in that paper, the cross section is also
-unfolded in both jet mass and $pt$, however we also provide the measurement in jet $\rho$, dimensionless mass , and $pt$. While the previous measurement considered only one value for the soft drop parameter $\beta$, this analysis considers several.
+unfolded in both jet mass and $pt$, however we also provide the measurement in jet $\rho$, dimensionless mass , and $pt$. While the previous measurement considered only one value for the soft drop parameters, $\beta$ and $z_{cut}$, this analysis considers several.
 We apply the soft drop algorithm to compare
 directly to theoretical computations. Additionally, we not only measure the cross section as a function of mass, but also as a function of dimensionless mass, $\rho = 2log(m/(pt R))$, as is also done in the previously mentioned ATLAS measurement.  The dimensionless mass $\rho$ only weakly depends on $pt$, unlike mass, which is highly correlated. Additionally, the use of this variable aids in the separation of fixed order, perturbative and non-perturbative effects.
 Finally, we also present the normalized differential cross section. We compute the cross sections normalized per $pt$ bin
@@ -79,7 +121,4 @@ The 2 above normalized distributions are provided within for ungroomed  and groo
 $ \beta = [ 1,  0 , -1 ]  $
 
 $ z_{cut}  = [ 0.15, 0.1, 0.05 ] $ 
-
-
-These measurements currently represent humanity's highest energy measurement of a light quark enriched jet production cross section.
 
