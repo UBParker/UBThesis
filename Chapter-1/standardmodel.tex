@@ -19,6 +19,24 @@ The SM also contains a Higgs boson, an excitation of a scalar Higg's field, whic
 
 The quarks and leptons are arranged in generations according to their relative masses, as shown in Figure \ref{fig:SM}. The table also shows the spins of the particles, the leptons and quarks have half-integer spin, fermions, that obey the fermi exclusion principle, conversely the bosons have half integer spin and therefore obey bose-einstein statitics. Through the SM we interpret the observed hadronic particles, mesons ( baryons ) , as 2 quark (3 quark) bound states. The existence of spin $\frac{3}{2}$ baryons, which are symmetric bound states in space, spin and flavour and the need to obey Fermi-Dirac statistics, by maintaining total assymmetry of the wavefunction,implies there is another degree of freedom, called color, so that each quark is either red, green or blue. Granted only color singlet, containing either all 3 or 1 and it's anti color, states exist. Furthermore there exists a property of asymptotic freedom where the QCD coupling between quarks and gluons increases as they asymptotically approach one another. There exists a wealth of experiemental data to support the concept of asymptotic freedom despite the fact that rigorous mathematical proof of the exlusion of free quark and gluon states has yet to be acheived.
 
+
+%image CMS:2014mna
+% visuals/strong-coupling-cms
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1.0\textwidth]{visuals/strong-coupling-cms.png}
+\caption{The running of the strong coupling constand as compiled by CMS including measurements from CMS and HERA among others~\cite{CMS:2014mna}.}
+\label{fig:alphas}
+\end{figure}
+
+
+
+
+
+
+
 Assymptotic freedom is a useful property as it allows for perturbative calculations of QCD observables, this is discussed in section XXX.
 
 % Symmetris imply conserved quantities, Neuther's Theorem
@@ -42,9 +60,9 @@ Assymptotic freedom is a useful property as it allows for perturbative calculati
 \subsection{Quantum Chromodynamics}\label{secSM:ch1}
 
 
-For the purpose of this thesis, in order to emphasize the relevance to jet substructure measurements, I will discuss the theory of Quantum Chromodynamics from a kinematic (<- better word?) rather than Lagrangian perspective. This is useful as the jet studies presented here help probe QCD in the soft and collinear limits. 
+In order to emphasize the relevance to the measurement presented herein, the theory of Quantum Chromodynamics is discussed here from a kinematic (<- better word?) rather than Lagrangian perspective. This is useful as jet studies help probe QCD in the soft and collinear limits. 
 % https://arxiv.org/pdf/1709.06195.pdf CITE THIS LECTURE
-Jets are formed by the hadronization of quarks and gluons. In this thesis I present a measurement of a light quark enriched jet samples. Consider the simplest process that could produce a quark initiated jet, a quark of energy $E_q$  emitting a gluon of energy $E_g$. The probability that this will occur is a function of the gluon's energy fraction, $z$, and the emission angle , $\theta$.\newline
+Jets are formed by the hadronization of quarks and gluons. In this thesis I present a measurement of a light quark enriched jet samples. Consider the simplest process that could produce a quark initiated jet, a quark of energy $E_q$  emitting a gluon of energy $E_g$. The probability that this will occur is a function of the gluon's energy fraction, $z$, and the emission angle , $\theta$  \cite{Larkoski:2017fip}.\newline
 
 
 $z = \frac{E_g}{E_q + E_g}$\newline
@@ -61,10 +79,19 @@ It is useful to assume the small angle approximation, $\theta << 1$, giving:\new
 
 $P_q(z,\theta^2) dz d \theta^2 = \frac{\alpha_s C_F}{\pi}  \frac{dz}{z} \frac{d \theta^2}{ \theta^2}  $\newline
 
-Notice that the probability of emission diverges for very soft (small z) or very collinear (small $\theta$) gluons.
+Notice that the probability of emission diverges for very soft (small z) or very collinear (small $\theta$) gluons. In the soft and collinear limits the probability can be interpretted as an expectation value for the number of soft/collinear gluons \cite{Larkoski:2017fip}.
 
 It is elucidating to rewite the probability in terms of inverse logarithms in the and intruduce the "Lund Diagram" in order to visualize the uniform distribution of soft and collinear gluons in the $log \frac{1}{ \theta^2} , log\frac{1}{z} $ space.
 
+The primary lund plane is shown in Figure XX ~\cite{Dreyer:2018nbf}
+%image 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1.0\textwidth]{visuals/figs_lund.png}
+\caption{The primary and secondary lund planes for 2 example jets~\cite{Dreyer:2018nbf}.}
+\label{fig:lund}
+\end{figure}
 
 
 $P_q(z,\theta^2) dz d \theta^2 = \frac{\alpha_s C_F}{\pi} d( log\frac{1}{z}  ) d(log \frac{1}{ \theta^2})  $\newline
@@ -75,6 +102,97 @@ Jets can also be initiated by gluons and this probability is incredibly similar 
 $P_q(z,\theta^2) dz d \theta^2 = \frac{\alpha_s C_A}{\pi} d( log\frac{1}{z}  ) d(log \frac{1}{ \theta^2})  $\newline
 
 
-This similarity allows us to interpret the variations in quark enriched and gluon enriched jet samples in terms of the $C_F$ and $C_A$, in $SU(3)$ ,   $C_F = \frac{4}{3}$ and $C_A=3$.
+This similarity allows us to interpret the variations in quark enriched and gluon enriched jet samples in terms of the fundamental $C_F$ and adjoint $C_A$ casimirs, in $SU(3)$ ,   $C_F = \frac{4}{3}$ and $C_A=3$. 
 
 
+Comparing the probability of a quark to emit a gluon and that of a gluon to to emit a gluon we can see the ratio will give simply $\frac{C_A}{C_F} =\frac{9}{4} $. This has strong experimental implications since it implies gluon jets will on average be composed of about twice as many constituent particles as quark jets.
+
+\chapter{Jets in Proton-Proton Collisions}%\label{ch1:intro}
+
+A jet is a collumnated collection of hadrons produced from a free quark or gluon fragmenting, since color confinement prevents color charged particles from existing freely. While jets are often used as simple proxies for the quark or gluon from which they originated, the structure of the radiation pattern of the hard scatter is encoded within the jet's constituent particles. Analyzing the entire radiation pattern allows for a deeper understanding of the jet's origin.\cite{Asquith:2018igt}
+
+
+\section{Jet Clustering Algorithms}\label{secSM:ch1}
+
+
+
+
+
+sequential recombination algorithms
+%# https://arxiv.org/pdf/1304.1025.pdf
+%Sequential recombination algorithm for jet clustering and
+KT - > C/A -> Anti-KT
+\cite{Tseng:2013dva}
+
+
+
+%##image C/A vs anti-Kt --- visuals/config-antikt-double-lund
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1.0\textwidth]{visuals/config-antikt-double-lund.png}
+\caption{How clustering follows radiation pattern for different algorithms~\cite{Dreyer:2018nbf}.}
+\label{fig:lund}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1.0\textwidth]{visuals/figs_subjet-plots-antikt.png}
+\caption{How clustering looks for Anti-Kt, circular pattern makes pileup and underlying event subtraction more simple for experimentalists~\cite{Dreyer:2018nbf}.}
+\label{fig:lund}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1.0\textwidth]{visuals/figs_subjet-plots-CA.png}
+\caption{C/A, not circular, shaped like radiation pattern~\cite{Dreyer:2018nbf}.}
+\label{fig:lund}
+\end{figure}
+%#
+
+%#
+
+
+\section{Jet Structure}\label{jetstruc:ch1}
+
+The picture is not so simple, we have pileup and underlying event. We analyze the entire radiation pattern and from its structure can determine the probability that a  gluon or quark (even the type of quark) initiated this jet there exist many methods for going about these tasks.
+
+Quark/Gluon discrimination is discussed in section QUARK GLUON SECTION and can be done in many ways such as examining the gluon emission spectrum as visualized in the lund plane as mentioned in the introduction. In this section quark jet discrimination is discussed, specifically how the higher order corrections to the hard process are nessessary in order to properly predict measurements in the non-perturbative regime.
+
+NLO + NLL + NP to match data in non-perturbative regime
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1.0\textwidth]{visuals/ATLAS-rho-highorder.png}
+\caption{ATLS DIJets Rho result~\cite{Dreyer:2018nbf}.}
+\label{fig:lund}
+\end{figure}
+
+
+
+% pilup images with diff algorithms
+%# https://arxiv.org/pdf/1304.1025.pdf
+%Sequential recombination algorithm for jet clustering and
+
+%Towards Jetography
+%Gavin P. Salam
+%$https://arxiv.org/abs/0906.1833
+\cite{Salam:2009jx}
+
+\cite{Asquith:2018igt}
+%https://arxiv.org/pdf/1803.06991.pdf
+%Jet Substructure at the Large HadronCollider :  Experimental Review
+
+\section{Jet Grooming}\label{jetgroom:ch1}
+
+Soft-drop
+
+other grooomers
+
+image of soft drop compared to others
+
+image of soft drop grooming tree
+
+
+%Casimir Meets Poisson: Improved Quark/Gluon Discrimination with Counting Observables
+%https://arxiv.org/abs/1704.06266
+%soft drop multiplicity
