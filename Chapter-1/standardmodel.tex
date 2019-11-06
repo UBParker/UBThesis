@@ -1,11 +1,26 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{The Standard Model}\label{secSM:ch1}
+\section{Introduction To The Standard Model}\label{secSM:ch1}
 
-%"Theorists can be wrong; only nature is always right" - David Gross
-"Fortunately, nature is as generous with its problems as Nobel with his fortune. The more we know, the more aware we are of what we know not."- David Gross \newline
 
-The Standard Model, SM, of particle physics constitues humanity's latest attempt at describing our universe in a calculable way. The basic premise being, the entire universe is compised solely of; 6 types of quark and 6 types of lepton, which comprise matter, and the guage bosons, which mediate the 3 (this theory does not yet encompass gravitaion) fundamental forces; The strong and weak nuclear interactions and electromagnetism. 
 
+
+"Theorists can be wrong; only nature is always right" - David Gross\newline
+
+%"Fortunately, nature is as generous with its problems as Nobel with his fortune. The more we know, the more aware we are of what we know not."- David Gross 
+
+
+The Standard Model (SM) of particle physics is a quantum field theory (QFT) description of the strong, weak and electromagnetic forces of nature. The known particles of the SM are; 1 scalar Higgs boson,4 guage bosons, 6 types of quark, and 6 types of lepton. 
+
+The quarks and leptons, particles which constitute matter, are fermions, obeying Fermi-Dirac statistics due to their half-integer spin. In contrast,the bosons have integer spin and obey Bose-Einstein statistics. Gauge bosons mediate the 3 fundamental forces and the Higg's boson is responsible for the electro-weak symmetry breaking which gives mass to the other particles\cite{Griffiths:111880}. 
+
+The fermions are arranged into 3 generations, arranged in columns from left to right on \cite{fig:SM}}
+
+
+
+Quantum Chromodynamics, QCD, is the theory of the strong interaction which governs the interactions of quarks and gluons\cite{Griffiths:111880}.
+
+
+The SM constitues humanity's most rigorous theory of our universe, providing predictions of observables which have since been measured, in the case of Quantum Electrodynamics, QED, to the highest precision of any scientific theory. Despite the impressive predictions,the gravitational force and more subtle phenomena, such as flavor oscillation of neutrinos \cite{Ashie:2005ik}, indicate the existence of physics beyond the standard model, BSM.
 
 Various attempts have been made to unify the fundamental forces under one theory, thusfar the electromagnetic and weak interactions have been united by electro-weak theory. 
 
@@ -13,7 +28,7 @@ The Standard electroweak model can be described $SU(2) x U(1)$ mathematically.
 
 The  $SU(2) x U(1)$ guage group is a convolution ( $<- $That is not the right word...) of the special unitary symmetry group $SU(2)$ describing 3 mixed massive vector bosons, $W_{-}$ $W_{+}$ $Z_0$, carriers of the weak nuclear force and the unitary gauge group $U(1)$ , describing the lonely massless chargeless photon, of the electromagnetic interaction.
 
-The standard model of the strong interaction is known as quatum chromodynamics, QCD, described by the special unitary group $(SU(3)_f)$, where the  flavours of quark are the physical manifestation of the symmetry group. This force is mediated by the 8 massless gluons which carry color charge, making QCD more complicated mathematically than QED.
+The standard model of the strong interaction is known as quatum chromodynamics, QCD, a non-Abelian guage theory described by the special unitary group $(SU(3)_f)$, where the  flavours of quark are the physical manifestation of the symmetry group. This force is mediated by the 8 massless gluons which carry color charge, making QCD more complicated mathematically than QED.
 
 The SM also contains a Higgs boson, an excitation of a scalar Higg's field, which gives rise to spantaneous symmetry breaking of the electroweak theory, providing the particles with mass, but I won't get into that. 
 
@@ -59,6 +74,21 @@ Assymptotic freedom is a useful property as it allows for perturbative calculati
 
 \subsection{Quantum Chromodynamics}\label{secSM:ch1}
 
+
+lagrangian
+
+\begin{equation}
+\mathcal{L}=-\frac{1}{4} F_{\mu \nu}^{A} F_{A}^{\mu \nu}+\sum_{\text {flavours }} \overline{\psi}_{a}\left(i \gamma_{\mu} D^{\mu}-m\right)_{a b} \psi_{b}
+\end{equation}
+
+\begin{equation}
+F_{\mu \nu}^{A}=\partial_{\mu} A_{\nu}^{A}-\partial_{\nu} A_{\mu}^{A}+g_{s} f^{A B C} A_{\mu}^{B} A_{\nu}^{C}
+\end{equation}
+
+covariant derivative
+\begin{equation}
+\left(D_{\mu}\right)_{a b}=\partial_{\mu} \delta_{a b}-i g_{s} A_{\mu}^{A} t_{a b}^{A}
+\end{equation}
 
 In order to emphasize the relevance to the measurement presented herein, the theory of Quantum Chromodynamics is discussed here from a kinematic (<- better word?) rather than Lagrangian perspective. This is useful as jet studies help probe QCD in the soft and collinear limits. 
 % https://arxiv.org/pdf/1709.06195.pdf CITE THIS LECTURE
@@ -113,7 +143,13 @@ Comparing the probability of a quark to emit a gluon and that of a gluon to to e
 
 \chapter{Jets in Proton-Proton Collisions}%\label{ch1:intro}
 
-A jet is a collimated grouping of hadrons usually associated with the production of a parton, quark or gluon, in this case initiated by the hard scatter of 2 constituent partons from protons. The initial parton radiates other quarks and gluons, called the "Parton Shower" and either way all color charged particles fragment into hardons, mainly pions and kaons,  before reaching the detector. Studies of jets at LHC are complicated by experimental complexities such as "underlying event", other partons from the same proton iteracting and depoiting energy in the same region of the detector. "Pileup" is also increasingly relevant, like "underlying event" but initiated from other proton interactions from this or a previous bunch since LHC collides $~10^{11}$ protons in bunches every 25 nanoseconds. Lastly any measurement is limited by the resolution of the measurement device and any detector effects which are disentangled from the signal by "unfolding" the reconstructed distributions back to generator level.
+A jet is a collimated grouping of hadrons usually associated with the production of a parton, quark or gluon, in this case initiated by the hard scatter of 2 constituent partons from protons. The initial parton radiates other quarks and gluons, called the "Parton Shower" and all color charged particles fragment into hardons, mainly pions and kaons,  before reaching the detector.
+
+Studies of jets at LHC are complicated by experimental complexities such as "underlying event", other partons from the same proton iteracting and depoiting energy in the same region of the detector. "Pileup" is also increasingly relevant, like "underlying event" but initiated from other proton interactions from this or a previous bunch since LHC collides $~10^{11}$ protons in bunches every 25 nanoseconds.
+
+
+
+Lastly any measurement is limited by the resolution of the measurement device and any detector effects which are disentangled from the signal by "unfolding" the reconstructed distributions back to generator level.
 
 While jets are often used as simple proxies for the quark or gluon from which they originated, the structure of the radiation pattern of the hard scatter is encoded within the jet's constituent particles~\cite{Asquith:2018igt}. Jet studies are essential for a complete understanding of proton-proton interactions since the majority of interesting physics signatures contain a color charged parton in the final state. This chapter covers the basics of jet physics at LHC, from the algorithms used for clustering the constituent particles in experimental data to the language and calculations of the theory.
 
@@ -123,11 +159,28 @@ While jets are often used as simple proxies for the quark or gluon from which th
 
 \section{Jet Clustering Algorithms}\label{secSM:ch1}
 
+Ideally, a jet represents a quark [gluon] parton however a more precise definition :
+
+"A phase space region (as defined by an unambiguoushadronic fiducial cross section measurement) that yieldsan enriched sample of quarks [gluons] (as interpreted by somesuitable, though fundamentally ambiguous, criterion)"~\cite{Badger:2016bpw} as defined at the Les Houches confernece in 2015 .
+
+I will discuss one class of "suitable, though fundamentally ambiguous" criteria for defining jets, known as sequential recombination algorithms. These algorithms take pairs of particles and successively combine them into 1 particle, in a way which in intended to reconstruct the successive branchings of partons within the jet as described by perturbative QCD ~\cite{Marzani:2019hun}.
+ 
+In sequential recombination algorithms a distance metric, $d_{ij}$, is defined between all particle pairs, these pairs are then sequentially combined in order of increasing distance.There exist three popular  algorithms in this class, all of the following can be described by the equation ~\cite{Ellis:1993tq}:
+
+
+\begin{equation}
+\begin{array}{l}{d_{i j}=\min \left(p_{t i}^{2 p}, p_{t j}^{2 p}\right) \frac{\Delta R_{i j}^{2}}{R^{2}} \quad \Delta R_{i j}^{2}=\left(y_{i}-y_{j}\right)^{2}+\left(\phi_{i}-\phi_{j}\right)^{2}} \\ {d_{i B}=p_{t i}^{2 p}}\end{array}
+\end{equation}
+
+
+Depending on the value chosen for $p$, this equation can produce a variety of clusterings, herein I discuss the 3 popular choices $p = [1, 0, -1]$ refering to them by their names ; KT ~\cite{Ellis:1993tq}, Cambridge/Aachen ~\cite{Dokshitzer:1997in} and Anti-KT algorithms ~\cite{Cacciari:2008gp}, respectively.
 
 
 
 
-sequential recombination algorithms
+
+
+
 
 % good section on it here
 % http://inspirehep.net/record/1123042/files/fermilab-thesis-2012-12.pdf
@@ -213,3 +266,13 @@ image of soft drop grooming tree
 
 
 % DY thesis https://cds.cern.ch/record/2018454/files/CERN-THESIS-2015-048.pdf
+\section{Jet Production Cross Sections}\label{jetgroom:ch1}
+
+
+
+\begin{equation}
+\sigma=\sum_{a, b} \int_{0}^{1} d x_{a} d x_{b} \int d \Phi_{n} f_{a}^{h_{1}}\left(x_{a}, \mu_{F}\right) f_{b}^{h_{2}}\left(x_{b}, \mu_{F}\right) \frac{1}{2 \hat{s}}\left|\mathcal{M}_{a b \rightarrow n}\right|^{2}\left(\Phi_{n} ; \mu_{F}, \mu_{R}\right)
+\end{equation}
+
+
+
