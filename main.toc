@@ -1,0 +1,38 @@
+\select@language {english}
+\contentsline {chapter}{List of Tables}{v}
+\contentsline {chapter}{List of Figures}{vi}
+\contentsline {chapter}{Abstract}{xxxiii}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {chapter}{\numberline {2}Theoretical Framework}{3}
+\contentsline {section}{\numberline {2.1}Introduction To The Standard Model}{3}
+\contentsline {subsection}{\numberline {2.1.1}Quantum Electrodynamics}{6}
+\contentsline {subsection}{\numberline {2.1.2}Quantum Chromodynamics}{6}
+\contentsline {section}{\numberline {2.2}Event Generation and reconstruction}{8}
+\contentsline {subsection}{\numberline {2.2.1}Monte Carlo Event Generators}{8}
+\contentsline {subsection}{\numberline {2.2.2}Event Reconstruction}{9}
+\contentsline {chapter}{\numberline {3}Jets in Proton-Proton Collisions}{12}
+\contentsline {section}{\numberline {3.1}Jet Clustering Algorithms}{13}
+\contentsline {section}{\numberline {3.2}Jet Structure}{14}
+\contentsline {section}{\numberline {3.3}Jet Grooming}{15}
+\contentsline {section}{\numberline {3.4}Jet Production Cross Sections}{15}
+\contentsline {section}{\numberline {3.5}Jet and Soft Functions in Soft-Collinear Effective Theory}{15}
+\contentsline {section}{\numberline {3.6}Jets Initited by Quarks and Gluons }{16}
+\contentsline {chapter}{\numberline {4}CMS Experiment at LHC}{20}
+\contentsline {section}{\numberline {4.1}The Large Hadron Collider}{20}
+\contentsline {section}{\numberline {4.2}The CMS Detector}{20}
+\contentsline {chapter}{\numberline {5}Measurement of the differential jet production cross section with respect to jet mass and transverse momentum in Z + Jet events from pp collisions at $\sqrt {s}$ = 13 TeV}{22}
+\contentsline {section}{\numberline {5.1}Introduction}{23}
+\contentsline {section}{\numberline {5.2}Data and MC}{25}
+\contentsline {section}{\numberline {5.3}Trigger}{29}
+\contentsline {section}{\numberline {5.4}Reconstruction and Selection}{29}
+\contentsline {section}{\numberline {5.5}Data to MC Comparisons}{37}
+\contentsline {section}{\numberline {5.6}Detector Response}{44}
+\contentsline {section}{\numberline {5.7}Uncertainties}{52}
+\contentsline {section}{\numberline {5.8}Unfolding}{57}
+\contentsline {section}{\numberline {5.9}Results}{68}
+\contentsline {section}{\numberline {5.10}Summary}{95}
+\contentsline {section}{\numberline {.1}2016 data results}{95}
+\contentsline {section}{\numberline {.2}2017 data results}{148}
+\contentsline {section}{\numberline {.3}2018 data results}{200}
+\contentsline {chapter}{\numberline {A}Conclusion}{239}
+\contentsline {section}{\numberline {A.1}Conclusion}{239}

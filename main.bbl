@@ -1,0 +1,291 @@
+\begin{thebibliography}{10}
+
+\bibitem{CMS:2014mna}
+Vardan Khachatryan et~al.
+\newblock {Measurement of the inclusive 3-jet production differential cross
+  section in proton–proton collisions at 7 TeV and determination of the
+  strong coupling constant in the TeV range}.
+\newblock {\em Eur. Phys. J.}, C75(5):186, 2015.
+
+\bibitem{modellinginvisible}
+{modellinginvisible.org} standard model description.
+\newblock \url{https://www.modellinginvisible.org/standard-model/}.
+\newblock Accessed: 2019-08-06.
+
+\bibitem{Dreyer:2018nbf}
+Frédéric~A. Dreyer, Gavin~P. Salam, and Grégory Soyez.
+\newblock {The Lund Jet Plane}.
+\newblock {\em JHEP}, 12:064, 2018.
+
+\bibitem{Becher:2014oda}
+Thomas Becher, Alessandro Broggio, and Andrea Ferroglia.
+\newblock {Introduction to Soft-Collinear Effective Theory}.
+\newblock {\em Lect. Notes Phys.}, 896:pp.1--206, 2015.
+
+\bibitem{Chatrchyan:2013vbb}
+Serguei Chatrchyan et~al.
+\newblock {Studies of Jet Mass in Dijet and W/Z + Jet Events}.
+\newblock {\em JHEP}, 05:090, 2013.
+
+\bibitem{Sirunyan:2018xdh}
+Albert~M. Sirunyan et~al.
+\newblock {Measurements of the differential jet cross section as a function of
+  the jet mass in dijet events from proton-proton collisions at $ \sqrt{s}=13 $
+  TeV}.
+\newblock {\em JHEP}, 11:113, 2018.
+
+\bibitem{Aaboud:2017qwh}
+Morad Aaboud et~al.
+\newblock {Measurement of the Soft-Drop Jet Mass in pp Collisions at $\sqrt{s}
+  = 13$ TeV with the ATLAS Detector}.
+\newblock {\em Phys. Rev. Lett.}, 121(9):092001, 2018.
+
+\bibitem{Griffiths:111880}
+David~J Griffiths.
+\newblock {\em {Introduction to elementary particles; 2nd rev. version}}.
+\newblock Physics textbook. Wiley, New York, NY, 2008.
+
+\bibitem{Ashie:2005ik}
+Y.~Ashie et~al.
+\newblock {A Measurement of atmospheric neutrino oscillation parameters by
+  SUPER-KAMIOKANDE I}.
+\newblock {\em Phys. Rev.}, D71:112005, 2005.
+
+\bibitem{Larkoski:2017fip}
+Andrew~J. Larkoski.
+\newblock {An Unorthodox Introduction to QCD}.
+\newblock 2017.
+
+\bibitem{Asquith:2018igt}
+Lily Asquith et~al.
+\newblock {Jet Substructure at the Large Hadron Collider : Experimental
+  Review}.
+\newblock 2018.
+
+\bibitem{Badger:2016bpw}
+J.~R. Andersen et~al.
+\newblock {Les Houches 2015: Physics at TeV Colliders Standard Model Working
+  Group Report}.
+\newblock In {\em {9th Les Houches Workshop on Physics at TeV Colliders
+  (PhysTeV 2015) Les Houches, France, June 1-19, 2015}}, 2016.
+
+\bibitem{Marzani:2019hun}
+Simone Marzani, Gregory Soyez, and Michael Spannowsky.
+\newblock {Looking inside jets: an introduction to jet substructure and
+  boosted-object phenomenology}.
+\newblock 2019.
+\newblock [Lect. Notes Phys.958,pp.(2019)].
+
+\bibitem{Ellis:1993tq}
+Stephen~D. Ellis and Davison~E. Soper.
+\newblock {Successive combination jet algorithm for hadron collisions}.
+\newblock {\em Phys. Rev.}, D48:3160--3166, 1993.
+
+\bibitem{Dokshitzer:1997in}
+Yuri~L. Dokshitzer, G.~D. Leder, S.~Moretti, and B.~R. Webber.
+\newblock {Better jet clustering algorithms}.
+\newblock {\em JHEP}, 08:001, 1997.
+
+\bibitem{Cacciari:2008gp}
+Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
+\newblock {The anti-$k_t$ jet clustering algorithm}.
+\newblock {\em JHEP}, 04:063, 2008.
+
+\bibitem{Tseng:2013dva}
+Jeff Tseng and Hannah Evans.
+\newblock {Sequential recombination algorithm for jet clustering and background
+  subtraction}.
+\newblock {\em Phys. Rev.}, D88:014044, 2013.
+
+\bibitem{Salam:2009jx}
+Gavin~P. Salam.
+\newblock {Towards Jetography}.
+\newblock {\em Eur. Phys. J.}, C67:637--686, 2010.
+
+\bibitem{softdrop}
+Andrew~J. Larkoski, Simone Marzani, Gregory Soyez, and Jesse Thaler.
+\newblock {Soft Drop}.
+\newblock {\em JHEP}, 05:146, 2014.
+
+\bibitem{mmdt}
+Mrinal Dasgupta, Alessandro Fregoso, Simone Marzani, and Gavin~P. Salam.
+\newblock {Towards an understanding of jet substructure}.
+\newblock {\em JHEP}, 09:029, 2013.
+
+\bibitem{Dasgupta:2001sh}
+M.~Dasgupta and G.~P. Salam.
+\newblock {Resummation of nonglobal QCD observables}.
+\newblock {\em Phys. Lett.}, B512:323--330, 2001.
+
+\bibitem{Dasgupta:2013via}
+Mrinal Dasgupta, Alessandro Fregoso, Simone Marzani, and Alexander Powling.
+\newblock {Jet substructure with analytical methods}.
+\newblock {\em Eur. Phys. J.}, C73(11):2623, 2013.
+
+\bibitem{Dasgupta:2015yua}
+Mrinal Dasgupta, Alexander Powling, and Andrzej Siodmok.
+\newblock {On jet substructure methods for signal jets}.
+\newblock {\em JHEP}, 08:079, 2015.
+
+\bibitem{Larkoski:2015zka}
+Andrew~J. Larkoski, Ian Moult, and Duff Neill.
+\newblock {Non-Global Logarithms, Factorization, and the Soft Substructure of
+  Jets}.
+\newblock {\em JHEP}, 09:143, 2015.
+
+\bibitem{Dasgupta:2012hg}
+Mrinal Dasgupta, Kamel Khelifa-Kerfa, Simone Marzani, and Michael Spannowsky.
+\newblock {On jet mass distributions in Z+jet and dijet processes at the LHC}.
+\newblock {\em JHEP}, 10:126, 2012.
+
+\bibitem{Chien:2012ur}
+Yang-Ting Chien, Randall Kelley, Matthew~D. Schwartz, and Hua~Xing Zhu.
+\newblock {Resummation of Jet Mass at Hadron Colliders}.
+\newblock {\em Phys. Rev.}, D87(1):014010, 2013.
+
+\bibitem{Jouttenus:2013hs}
+Teppo~T. Jouttenus, Iain~W. Stewart, Frank~J. Tackmann, and Wouter~J.
+  Waalewijn.
+\newblock {Jet mass spectra in Higgs boson plus one jet at
+  next-to-next-to-leading logarithmic order}.
+\newblock {\em Phys. Rev.}, D88(5):054031, 2013.
+
+\bibitem{Almeida:2014uva}
+Leandro~G. Almeida, Stephen~D. Ellis, Christopher Lee, George Sterman, Ilmo
+  Sung, and Jonathan~R. Walsh.
+\newblock {Comparing and counting logs in direct and effective methods of QCD
+  resummation}.
+\newblock {\em JHEP}, 04:174, 2014.
+
+\bibitem{Liu:2014oog}
+Ze~Long Liu, Chong~Sheng Li, Jian Wang, and Yan Wang.
+\newblock {Resummation prediction on the jet mass spectrum in one-jet inclusive
+  production at the LHC}.
+\newblock {\em JHEP}, 04:005, 2015.
+
+\bibitem{Stewart:2014nna}
+Iain~W. Stewart, Frank~J. Tackmann, and Wouter~J. Waalewijn.
+\newblock {Dissecting Soft Radiation with Factorization}.
+\newblock {\em Phys. Rev. Lett.}, 114(9):092001, 2015.
+
+\bibitem{Khelifa-Kerfa:2015mma}
+Kamel Khelifa-Kerfa and Yazid Delenda.
+\newblock {Non-global logarithms at finite N$_{c}$ beyond leading order}.
+\newblock {\em JHEP}, 03:094, 2015.
+
+\bibitem{Frye:2016aiz}
+Christopher Frye, Andrew~J. Larkoski, Matthew~D. Schwartz, and Kai Yan.
+\newblock {Factorization for groomed jet substructure beyond the
+  next-to-leading logarithm}.
+\newblock 2016.
+
+\bibitem{Kolodrubetz:2016dzb}
+Daniel~W. Kolodrubetz, Piotr Pietrulewicz, Iain~W. Stewart, Frank~J. Tackmann,
+  and Wouter~J. Waalewijn.
+\newblock {Factorization for Jet Radius Logarithms in Jet Mass Spectra at the
+  LHC}.
+\newblock 2016.
+
+\bibitem{MCFM1}
+John~M. Campbell and R.~Keith Ellis.
+\newblock {An Update on vector boson pair production at hadron colliders}.
+\newblock {\em Phys. Rev.}, D60:113006, 1999.
+
+\bibitem{MCFM2}
+John~M. Campbell, R.~Keith Ellis, and Ciaran Williams.
+\newblock {Vector boson pair production at the LHC}.
+\newblock {\em JHEP}, 07:018, 2011.
+
+\bibitem{cms_jetmassDijet}
+{The CMS collaboration}.
+\newblock Measurements of the differential jet cross section as a function of
+  the jet mass in dijet events from proton-proton collisions at $\sqrt{s} = 13$
+  tev.
+\newblock {\em Journal of High Energy Physics}, 2018(11):113, Nov 2018.
+
+\bibitem{atlas_jetmass2}
+Morad Aaboud et~al.
+\newblock {Measurement of the Soft-Drop Jet Mass in $pp$ Collisions at
+  $\sqrt{s}=13$ TeV with the ATLAS Detector}.
+\newblock {\em Phys. Rev. Lett.}, 121:092001, Aug 2018.
+
+\bibitem{Alwall_2014}
+J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, O.~Mattelaer,
+  H.-S. Shao, T.~Stelzer, P.~Torrielli, and M.~Zaro.
+\newblock The automated computation of tree-level and next-to-leading order
+  differential cross sections, and their matching to parton shower simulations.
+\newblock {\em Journal of High Energy Physics}, 2014(7), Jul 2014.
+
+\bibitem{Khachatryan:2015pea}
+Vardan Khachatryan et~al.
+\newblock {Event generator tunes obtained from underlying event and multiparton
+  scattering measurements}.
+\newblock {\em Eur. Phys. J.}, C76(3):155, 2016.
+
+\bibitem{Sirunyan:2019dfx}
+Albert~M Sirunyan et~al.
+\newblock {Extraction and validation of a new set of CMS PYTHIA8 tunes from
+  underlying-event measurements}.
+\newblock 2019.
+
+\bibitem{herwig}
+M.~Bahr et~al.
+\newblock {Herwig++ Physics and Manual}.
+\newblock {\em Eur. Phys. J.}, C58:639--707, 2008.
+
+\bibitem{CMS-PAS-PFT-09-001}
+{CMS Collaboration}.
+\newblock Particle--flow event reconstruction in {CMS} and performance for
+  jets, taus, and {\MET}.
+\newblock {\em CMS Physics Analysis Summary}, CMS-PAS-PFT-09-001, 2009.
+
+\bibitem{CMS-PAS-PFT-10-001}
+{CMS Collaboration}.
+\newblock Commissioning of the particle-flow event reconstruction with the
+  first {LHC} collisions recorded in the {CMS} detector.
+\newblock {\em CMS Physics Analysis Summary}, CMS-PAS-PFT-10-001, 2010.
+
+\bibitem{Sirunyan:2017ulk}
+A.~M. Sirunyan et~al.
+\newblock {Particle-flow reconstruction and global event description with the
+  CMS detector}.
+\newblock {\em JINST}, 12(10):P10003, 2017.
+
+\bibitem{fastjet}
+Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
+\newblock {FastJet user manual}.
+\newblock {\em Eur.Phys.J.}, C72:1896, 2012.
+
+\bibitem{jetarea_fastjet_pu}
+Matteo Cacciari and Gavin~P. Salam.
+\newblock {Pileup subtraction using jet areas}.
+\newblock {\em Phys. Lett.}, B659:119--126, 2008.
+
+\bibitem{jackknife}
+Adrian Cameron and Pravin Trivedi.
+\newblock {\em Microeconometrics : methods and applications}.
+\newblock Cambridge University Press, New York, 2005.
+
+\bibitem{EXO-15-002}
+CMS Collaboration.
+\newblock {Search for massive resonances decaying into pairs of boosted W and Z
+  bosons at $\sqrt{s}$ = 13 TeV}.
+\newblock 2015.
+
+\bibitem{CMS:2016eto}
+CMS Collaboration.
+\newblock {CMS Luminosity Measurement for the 2015 Data Taking Period}.
+\newblock CMS Physics Analysis Summary CMS-PAS-LUM-15-001, 2016.
+
+\bibitem{Schmitt:2012kp}
+Stefan Schmitt.
+\newblock {TUnfold: an algorithm for correcting migration effects in high
+  energy physics}.
+\newblock {\em JINST}, 7:T10003, 2012.
+
+\bibitem{D'Agostini:1994zf}
+G.~D'Agostini.
+\newblock {A Multidimensional unfolding method based on Bayes' theorem}.
+\newblock {\em Nucl. Instrum. Meth.}, A362:487--498, 1995.
+
+\end{thebibliography}

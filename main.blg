@@ -1,0 +1,75 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: unsrt.bst
+A level-1 auxiliary file: Chapter-0/chap0.aux
+A level-1 auxiliary file: Chapter-1/chap1.aux
+A level-1 auxiliary file: Chapter-2/chap2.aux
+A level-1 auxiliary file: Chapter-3/chap3.aux
+A level-1 auxiliary file: Chapter-4/chap4.aux
+A level-1 auxiliary file: Chapter-5/chap5.aux
+A level-1 auxiliary file: Chapter-6/chap6.aux
+Database file #1: AN-18-240.bib
+Repeated entry---line 351 of file AN-18-240.bib
+ : @article{Chatrchyan:2013vbb
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 965 of file AN-18-240.bib
+ : @article{Ellis:1993tq
+ :                      ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "fig:SM"
+Warning--I didn't find a database entry for "Sjostrand:2014zea"
+Warning--I didn't find a database entry for "Chatrchyan:2011ds"
+Warning--I didn't find a database entry for "CAcambridge"
+Warning--I didn't find a database entry for "CAaachen"
+Warning--empty journal in Larkoski:2017fip
+Warning--empty journal in Asquith:2018igt
+Warning--empty journal in Marzani:2019hun
+Warning--empty journal in Frye:2016aiz
+Warning--empty journal in Kolodrubetz:2016dzb
+Warning--empty journal in Sirunyan:2019dfx
+Warning--empty journal in EXO-15-002
+Warning--empty institution in CMS:2016eto
+You've used 51 entries,
+            1791 wiz_defined-function locations,
+            760 strings with 11835 characters,
+and the built_in function-call counts, 9982 in all, are:
+= -- 820
+> -- 487
+< -- 1
++ -- 183
+- -- 132
+* -- 650
+:= -- 1712
+add.period$ -- 155
+call.type$ -- 51
+change.case$ -- 49
+chr.to.int$ -- 0
+cite$ -- 59
+duplicate$ -- 448
+empty$ -- 991
+format.name$ -- 132
+if$ -- 2175
+int.to.chr$ -- 0
+int.to.str$ -- 51
+missing$ -- 51
+newline$ -- 259
+num.names$ -- 50
+pop$ -- 101
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 170
+stack$ -- 0
+substring$ -- 513
+swap$ -- 45
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 8
+while$ -- 86
+width$ -- 53
+write$ -- 548
+(There were 2 error messages)

@@ -86,12 +86,30 @@
 %\documentclass[draft,honorsdepthead,honors]{psuthesis}
 %\documentclass[draft,honors]{psuthesis}
 %\documentclass[draft,secondthesissupervisor,honors]{psuthesis}
-%\documentclass[draft,bs]{psuthesis}
+%\documentclass[draft,bs]{psuthesis}%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Packages we like to use. %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{ptdr-definitions}
+% Just stole these from utils/general/ptdr-definitions.sty
+\newcommand{\PT}{\ensuremath{p_{\mathrm{T}}}\xspace}
+\newcommand{\pt}{\ensuremath{p_{\mathrm{T}}}\xspace}
+\newcommand{\MADGRAPH}{\textsc{MadGraph}\xspace}
+\newcommand{\PYTHIA}{{\textsc{pythia}}\xspace}
+\newcommand{\kt}{\ensuremath{k_{\mathrm{T}}}\xspace}
+\newcommand{\FASTJET}{{\textsc{FastJet}}\xspace}
+\newcommand{\GeV}{\ensuremath{\,\text{Ge\hspace{-.08em}V}}\xspace}
+\newcommand{\GeVns}{\ensuremath{\text{Ge\hspace{-.08em}V}}\xspace} % no leading thinspace
+\newcommand{\gev}{\GeV}
+\newcommand{\TeV}{\ensuremath{\,\text{Te\hspace{-.08em}V}}\xspace}
+\newcommand{\MET}{\ETm}
+\newcommand{\ttbar}{\ensuremath{\mathrm{t} \overline{\mathrm{t}}}\xspace} % t-tbar
+\newcommand{\cPqt}{\PQt} % t for t quark
+\newcommand{\cPaqt}{\PAQt} % t for t anti-quark
+\newcommand{\ETm}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
+
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -102,7 +120,20 @@
 \usepackage[final]{graphicx}
 \usepackage[dvipsnames]{color}
 \DeclareGraphicsExtensions{.pdf, .jpg, .png}
-\usepackage{natbib}
+%\usepackage{natbib}
+%\bibliographystyle{unsrtnat}
+%\setcitestyle{numbers, square}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel} 
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{unsrt}
+ 
+
+%\addbibresource{ref} % The filename of the bibliography
+
+
 \usepackage{har2nat}
 \usepackage{verbatim}
 \usepackage{url}
@@ -111,18 +142,8 @@
 \usepackage{pstricks}
 \usepackage{sgamevar}
 \usepackage{egameps}
-\def\citeapos#1{\citeauthor{#1}'s \citeyear{#1}}
-\newenvironment{my_enumerate}
-{\begin{enumerate}
-  \setlength{\itemsep}{1pt}
-  \setlength{\parskip}{0pt}
-  \setlength{\parsep}{0pt}}{\end{enumerate}}
-\newenvironment{my_itemize}
-{\begin{itemize}
-  \setlength{\itemsep}{1pt}
-  \setlength{\parskip}{0pt}
-  \setlength{\parsep}{0pt}}{\end{itemize}}
-
+%\usepackage{natbib}
+%\addbibresource{athesis}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 % Setting for fncychap %
@@ -178,7 +199,7 @@
 % Author and Date of Degree Conferral or Defense
 \author{Ashley Marie Parker}
 % the degree will be conferred on this date
-\degreedate{August 2019}
+\degreedate{January 2020}
 % year of your copyright. I have removed this from the cover page because UB's guidelines do not include it.
 %\copyrightyear{2019}
 
@@ -222,12 +243,14 @@
 
 % Makes use of LaTeX's include facility. Add as many chapters
 % and appendices as you like.
-\includeonly{%
-Chapter-1/chap1,%
-Chapter-2/chap2,%
-Chapter-3/chap3,%
-Chapter-4/chap4,%
-Chapter-5/chap5,%
+\includeonly{
+Chapter-0/chap0,% introduction ****CALLED Ch1 all off by 1 bc I started with 0 here****
+Chapter-1/chap1,% Theoretical Framework
+Chapter-2/chap2,%  jets in pp collisions
+Chapter-3/chap3,% CMS experiment 
+Chapter-4/chap4,% event generation and reconstruction
+Chapter-5/chap5,% Z + jets AN 
+Chapter-6/chap6% W tagging AN
 %Appendix-A/main,%
 %Appendix-B/main%
 }
@@ -268,7 +291,7 @@ Chapter-5/chap5,%
 \psutitlepage
 
 %Generates Copyright Page
-\copyrightpage{SupplementaryMaterial/Copyright}
+%\copyrightpage{SupplementaryMaterial/Copyright}
 
 \newpage
 % Generates the committee page -- this is bound with your
@@ -300,7 +323,7 @@ Chapter-5/chap5,%
 
 % Generates the abstract. The argument should point to the
 % file containing your abstract.
-\thesisabstract{SupplementaryMaterial/Abstract}
+\thesisabstract{SupplementaryMaterial/Abstract.tex}
 
 
 \pagenumbering{arabic}
@@ -322,12 +345,13 @@ Chapter-5/chap5,%
 % THE ACTUAL CONTENT %
 %%%%%%%%%%%%%%%%%%%%%%
 % Chapters
+\include{Chapter-0/chap0}
 \include{Chapter-1/chap1}
 \include{Chapter-2/chap2}
 \include{Chapter-3/chap3}
 \include{Chapter-4/chap4}
 \include{Chapter-5/chap5}
-
+\include{Chapter-6/chap6}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Appendices
 %
@@ -357,11 +381,12 @@ Chapter-5/chap5,%
 % bibliography. LaTeX's standard stuff is shown below. If you
 % bibtex, then this section should look something like:
    \begin{singlespace}
-   \bibliographystyle{unsrt}
-   \phantomsection \addcontentsline{toc}{chapter}{Bibliography}
-   \bibliography{ref}
-   \end{singlespace}
+   %\bibliographystyle{plainnat}
+   %\phantomsection \addcontentsline{toc}{chapter}{Bibliography}
+   \bibliography{AN-18-240} % was ref 
 
+   %\printbibliography[heading=bibintoc]
+   \end{singlespace}
 %\begin{singlespace}
 %\begin{thebibliography}{99}
 %\addcontentsline{toc}{chapter}{Bibliography}

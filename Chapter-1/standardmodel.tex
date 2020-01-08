@@ -1,6 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Introduction To The Standard Model}\label{secSM:ch1}
-
+\section{Introduction To The Standard Model}\label{secSM}
 
 
 
@@ -13,7 +12,7 @@ The Standard Model (SM) of particle physics is a quantum field theory (QFT) desc
 
 The quarks and leptons, particles which constitute matter, are fermions, obeying Fermi-Dirac statistics due to their half-integer spin. In contrast,the bosons have integer spin and obey Bose-Einstein statistics. Gauge bosons mediate the 3 fundamental forces and the Higg's boson is responsible for the electro-weak symmetry breaking which gives mass to the other particles\cite{Griffiths:111880}. 
 
-The fermions are arranged into 3 generations, arranged in columns from left to right on \cite{fig:SM}}
+The fermions are arranged into 3 generations, arranged in columns from left to right on \cite{fig:SM}
 
 
 
@@ -68,11 +67,13 @@ Assymptotic freedom is a useful property as it allows for perturbative calculati
 \end{figure}
 
 
+\subsection{Quantum Electrodynamics}\label{secQED}
 
 
 
 
-\subsection{Quantum Chromodynamics}\label{secSM:ch1}
+
+\subsection{Quantum Chromodynamics}\label{secQCD}
 
 
 lagrangian
@@ -117,15 +118,18 @@ Notice that the probability of emission diverges for very soft (small z) or very
 
 It is elucidating to rewite the probability in terms of inverse logarithms in the and intruduce the "Lund Diagram" in order to visualize the uniform distribution of soft and collinear gluons in the $log \frac{1}{ \theta^2} , log\frac{1}{z} $ space.
 
-The primary lund plane is shown in Figure XX ~\cite{Dreyer:2018nbf}
-%image 
-
 \begin{figure}[htb]
+\label{fig:lund}
 \centering
 \includegraphics[width=1.0\textwidth]{visuals/figs_lund.png}
 \caption{The primary and secondary lund planes for 2 example jets~\cite{Dreyer:2018nbf}.}
-\label{fig:lund}
+
 \end{figure}
+
+
+The primary lund plane is shown in Figure ~/ref{fig:lund} ~\cite{Dreyer:2018nbf}
+%image 
+
 
 
 $P_q(z,\theta^2) dz d \theta^2 = \frac{\alpha_s C_F}{\pi} d( log\frac{1}{z}  ) d(log \frac{1}{ \theta^2})  $\newline
@@ -140,6 +144,44 @@ This similarity allows us to interpret the variations in quark enriched and gluo
 
 
 Comparing the probability of a quark to emit a gluon and that of a gluon to to emit a gluon, we can see the ratio is simply $\frac{C_A}{C_F} =\frac{9}{4} $. This has strong experimental implications since it implies gluon jets will on average be composed of about twice as many constituent particles as quark jets.
+
+
+
+
+
+
+\section{Event Generation and reconstruction}\label{secMCGenReco}
+
+
+The events used for this measurement were reconstructed from data aquired by the CMS detector in the case of the data and generated using monte carlo generators PYTHIA and HERWIG in the case of the generated data.
+
+\subsection{Monte Carlo Event Generators}\label{secMCGen}
+
+Monte Carlo (MC) event generators are tools used by both experimental and theoretical physicists to simulate different physical processes in order to make predictions and prepare future experiments. The main tasks of such generators are to calculate matrix elements of the relevant hard processes but they must also describe parton showering, hadronization and underlying event. MC can be utilized to extrapolate data measurements beyond the acceptance of the detector or in the case of this thesis it is used in the unfolding process to correct the data for detector efficiency and resolution.
+
+
+MC generators provide an ensemble of generated events which realistically describe the theoretical prediction for the physics process in question. Each individual generator implements a slighly different scheme in order to approximate the neccessary calculations for the factorization and renormalization scales relevant to a process. These variations mean that the choice of MC generator will have a slight effect on the generated distributions. For this reason, in the analysis described herein we compared results from 2 different generators: PYTHIA and HERWIG.
+
+PYTHIA is a very commonly used general purpose event generator which uses the parton shower approach for higher order corrections to the hard scattering matrix element.
+
+HERWIG is another commonly used event generator, incredibly similar to PYTHIA, differing mainly in hadronization and parton showering behaviors.
+
+
+\subsection{Event Reconstruction}\label{secReco}
+
+
+particle flow
+
+
+%%%%%%%%%%%% NEW  CHAPTER %%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
 
 \chapter{Jets in Proton-Proton Collisions}%\label{ch1:intro}
 
@@ -161,7 +203,10 @@ While jets are often used as simple proxies for the quark or gluon from which th
 
 Ideally, a jet represents a quark [gluon] parton however a more precise definition :
 
-"A phase space region (as defined by an unambiguoushadronic fiducial cross section measurement) that yieldsan enriched sample of quarks [gluons] (as interpreted by somesuitable, though fundamentally ambiguous, criterion)"~\cite{Badger:2016bpw} as defined at the Les Houches confernece in 2015 .
+"A phase space region (as defined by an unambiguous
+hadronic fiducial cross section measurement) that yields
+an enriched sample of quarks [gluons] (as interpreted by some
+suitable, though fundamentally ambiguous, criterion)"~\cite{Badger:2016bpw} as defined at the Les Houches confernece in 2015 .
 
 I will discuss one class of "suitable, though fundamentally ambiguous" criteria for defining jets, known as sequential recombination algorithms. These algorithms take pairs of particles and successively combine them into 1 particle, in a way which in intended to reconstruct the successive branchings of partons within the jet as described by perturbative QCD ~\cite{Marzani:2019hun}.
  
