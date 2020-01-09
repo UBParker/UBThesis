@@ -9,7 +9,10 @@ A level-1 auxiliary file: Chapter-3/chap3.aux
 A level-1 auxiliary file: Chapter-4/chap4.aux
 A level-1 auxiliary file: Appendix-A/main.aux
 Database file #1: AN-18-240.bib
-Warning--I didn't find a database entry for "fig:SM"
+Repeated entry---line 453 of file AN-18-240.bib
+ : @article{Dreyer:2018nbf
+ :                        ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "eq:sequRec"
 Warning--I didn't find a database entry for "Sirunyan:2018"
 Warning--empty journal in Frye:2016aiz
@@ -25,43 +28,43 @@ Warning--empty journal in EXO-15-002
 Warning--empty institution in CMS:2016eto
 You've used 60 entries,
             1791 wiz_defined-function locations,
-            794 strings with 12737 characters,
-and the built_in function-call counts, 11866 in all, are:
-= -- 970
+            791 strings with 12725 characters,
+and the built_in function-call counts, 11989 in all, are:
+= -- 982
 > -- 590
-< -- 2
+< -- 3
 + -- 221
 - -- 161
-* -- 792
-:= -- 2032
+* -- 793
+:= -- 2038
 add.period$ -- 181
 call.type$ -- 60
 change.case$ -- 58
 chr.to.int$ -- 0
 cite$ -- 71
-duplicate$ -- 526
-empty$ -- 1168
+duplicate$ -- 538
+empty$ -- 1183
 format.name$ -- 161
-if$ -- 2579
+if$ -- 2618
 int.to.chr$ -- 0
 int.to.str$ -- 60
 missing$ -- 59
 newline$ -- 303
 num.names$ -- 58
-pop$ -- 117
+pop$ -- 122
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 198
+skip$ -- 211
 stack$ -- 0
-substring$ -- 627
-swap$ -- 53
-text.length$ -- 2
+substring$ -- 634
+swap$ -- 63
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 11
-while$ -- 101
+while$ -- 102
 width$ -- 62
 write$ -- 642
-(There were 14 warnings)
+(There was 1 error message)

@@ -145,20 +145,32 @@ compute theoretically~\cite{Dasgupta:2001sh,mmdt,softdrop,Dasgupta:2013via,Dasgu
 \section{Lund Jet Plane}\label{sec:lundjetplane}
 
 
-   ~\ref{fig:introlund}
 
+A Lund kinematic Diagram, shown in  ~\ref{fig:introlund}, is an illustration of the kinematics of emissions within a jet in terms of two variables: horizontally, the logarithm of the inverse of the angle of a given emission with respect to the jet axis, and vertically the logarithm of the emission's transverse mometum $k_t$. The line of constant jet mass and the shaded region constitute the part of the phase space in which emissions are vetoed, this leads to a Sudakov form factor~\cite{mmdt}.
+
+The Lund kinematic diagram, or Lund jet plane, is a theoretical representation of the phase space within jets, and has been a useful tool for studying parton showers in the past, and has now been extended to individual jets through repeated Cambridge/Aachen declustering ~\cite{Dreyer:2018nbf}
 
 
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=.90\textwidth]{visuals/introlund.png}
-\caption{A Lund kinematic Diagram is composed of }
+\caption{A Lund kinematic Diagram. The line of constant jet mass is shown in red~\cite{mmdt}.  }
 \label{fig:introlund}
 \end{figure}
 
 
 
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1.0\textwidth]{visuals/figs_lund.png}
+\caption{The primary and secondary lund planes for 2 example jets~\cite{Dreyer:2018nbf}.}
+\label{fig:lundPrimaryandSecondary}
+\end{figure}
+
+
+The primary Lund plane is shown on the bottom of Figure ~\ref{fig:lundPrimaryandSecondary} ~\cite{Dreyer:2018nbf} where the black particle (a) "initiated" the jet and is described by the grey shaded region and particles (b) and (c) are marked with dots and constitute emissions within the jet. In contrast, the Lund diagram shows the phase space encompassed by each subsequent emission, not just the emission (a).~\cite{Dreyer:2018nbf}
+%image 
 
 
 
@@ -171,36 +183,70 @@ compute theoretically~\cite{Dasgupta:2001sh,mmdt,softdrop,Dasgupta:2013via,Dasgu
 
 Jet mass is a simple observable, useful for probing QCD. The calculations for the jet mass at leading order are described below for the plain and soft-drop groomed jets.
 
-\subsection{Plain Jet Mass}\label{sec:jetmass}
+\subsection{Plain Jet Mass }\label{sec:jetmass}
 
 
-In this section quark jet mass calculations are discussed at LO. 
+In this section quark jet mass calculations are discussed at LO. It is first useful to define the dimensionless jet mass, $\rho$ , as the plain mass is $\pt$ dependant.
+
+
+\begin{equation}
+\rho=m^{2} /\left(E^{2} R^{2}\right)
+\end{equation}
 
 
 
+Using the small-angle approximation, $\rho$ is invariant under Lorentz boosts along the jet axis direction, since they scale the jet $\pt$ up by some factor (say $\kappa$ ) and scale its opening angleby the inverse factor ($\frac{1}{\kappa}$) while leaving the mass unchanged. Due to this invariance, the analytical results are often simplest when expressed in terms of $\rho$ ~\cite{mmdt}.
+
+Now the integrated jet mass distribution can be defined as :\newline
+
+\begin{equation}
+D(\rho)=\int_{\rho}^{1} \frac{d \rho^{\prime}}{\rho^{\prime}} \int_{\rho^{\prime}}^{1} d z p_{g q}(z) \frac{\alpha_{s}\left(z \rho^{\prime} R^{2} p_{t}^{2}\right) C_{F}}{\pi}
+\end{equation}
+
+
+Above the quark-gluon splitting function is $p_{g q}=\frac{1+(1-z)^{2}}{2 z}$. This can be elucidating if we take the fixed coupling approximation to reveal the below relationship.~\cite{mmdt}
+
+
+\begin{equation}
+D(\rho) \simeq \frac{\alpha_{s} C_{F}}{\pi}\left[\frac{1}{2} \ln ^{2} \frac{1}{\rho}-\frac{3}{4} \ln \frac{1}{\rho}+\mathcal{O}(1)\right], \quad \text { (fixed coupling approx.) }
+\end{equation}
+
+In terms of the Lund diagram, discussed in ~\ref{sec:lundjetplane}, the above equation can be described simply, as the $\frac{1}{2} \ln ^{2} \frac{1}{\rho}$ term represents the bulk of the area of ~\ref{fig:introlund} and the $-\frac{3}{4} \ln \frac{1}{\rho}$ term is due to the hard collinear region where z is finite.
+
+
+The Next-to-Leading Logarithm (NLL) approximation gives the integrated jet mass distribution :\newline
+
+
+\begin{equation}
+\Sigma(\rho)=e^{-D(\rho)} \cdot \frac{e^{-\gamma_{E} D^{\prime}(\rho)}}{\Gamma\left(1+D^{\prime}(\rho)\right)} \cdot \mathcal{N}(\rho)
+\end{equation}
+
+In the above equation, the first term accounts for the Sudakov Suppression of emissions that would induce a jet mass greater than $\rho$. To restate this in the language of the Lund dagram, this is the probability that there are no emissions in the shaded region of ~\ref{fig:introlund}. The central term encodes the information of single-logarithmic corrections from multiple emissions, generally near the line of constant jet mass in ~\ref{fig:introlund}, sum together to obtain the total jet mass. The final factor, accounts for variations in the jets radiation pattern (non-global logarithms ) and boundaries of the jet (clustering logarithms ) induced by soft radiation near the jet’s edge, i.e. near the left-hand, vertical edge of the shaded region in  ~\ref{fig:introlund} ~\cite{mmdt}. Note that the non-global logarithms problematic and are the main reason why there does not exist a full resummation of the standard jet mass beyond NLL accuracy ~\cite{mmdt}.
+
+
+In order to better visualize the jet mass distribution, one can take the fixed coupling approximation then look at only the leading order differential jet mass distribution.~\cite{mmdt}
+
+\begin{equation}
+\frac{\rho}{\sigma} \frac{d \sigma}{d \rho} \simeq \frac{\alpha_{s} C_{F}}{\pi}\left(\ln \frac{1}{\rho}-\frac{3}{4}\right) e^{-\frac{\alpha_{s} C_{F}}{2 \pi}\left(\ln ^{2} \frac{1}{\rho}-\frac{3}{2} \ln \frac{1}{\rho}+\mathcal{O}(1)\right)}
+\end{equation}
+
+The above distribution allows one to see why the red line for plain jet mass looks as it does in the figure ~\ref{fig:quarkGluonPlainvsGroomedMass}.
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=1.10\textwidth]{visuals/quarkGluonPlainvsGroomedMass.png}
-\caption{(Left) The distribution of $\rho$ for tagged jets, with three taggers/groomers: pruning , trimming and the mass-drop tagger (MDT). The results have been obtained from Monte Carlo simulation with \PYTHIA 6.425~\cite{Sjostrand:2014zea}, for 14 TeV proton-proton collisions, at parton level, including initial and final-state showering, but without the underlying event (multiple interactions). (Right) Analogous distribution for Gluon jets.~\cite{mmdt}}
+\caption{(Left) The distribution of $\rho$ for tagged jets, with three taggers/groomers: pruning , trimming and the mass-drop tagger (MDT). (Right) Analogous distribution for gluon jets ~\cite{mmdt}.}
 \label{fig:quarkGluonPlainvsGroomedMass}
 \end{figure}
 
 
 
+ Starting from the far right of the distributions in ~\ref{fig:quarkGluonPlainvsGroomedMass} one can see that as $\rho$ decreases the plain jet mass (red line) grows linearly in $\ln \frac{1}{\rho}$ only to be cut off by Sudakov suppression (The exponential term in the jet mass equation at LO). Notice that the peak of the distributions can be calculated using ~\cite{mmdt}:\newline
 
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{equation}
+L_{\text {peak }}=1 / \sqrt{\bar{\alpha}_{s}}+\mathcal{O}(1)
+\end{equation}
+ 
 
 
 
@@ -228,9 +274,9 @@ Higher order corrections to the hard process are nessessary in order to properly
 %Towards Jetography
 %Gavin P. Salam
 %$https://arxiv.org/abs/0906.1833
-\cite{Salam:2009jx}
+%\cite{Salam:2009jx}
 
-\cite{Asquith:2018igt}
+%\cite{Asquith:2018igt}
 %https://arxiv.org/pdf/1803.06991.pdf
 %Jet Substructure at the Large HadronCollider :  Experimental Review
 
@@ -239,7 +285,7 @@ Higher order corrections to the hard process are nessessary in order to properly
 % DY thesis https://cds.cern.ch/record/2018454/files/CERN-THESIS-2015-048.pdf
 \section{Jet Production Cross Sections}\label{sec:jetProdCrossSections}
 
-Jets are produced copiously at LHC and are involved in the final states signal and background of many interesting processes. 
+Jets are produced copiously at LHC and are involved in the final states signal and background of many interesting processes. By making measurements of the jet mass spectrum in all event types at all energies we are forming a more complete understanding of perturbative QCD.
 
 
 \begin{equation}
