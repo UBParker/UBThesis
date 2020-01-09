@@ -6,13 +6,13 @@
 
 
 
-A jet is a collimated grouping of hadrons usually associated with the LO production of a parton, quark or gluon. In this case the quark (gluon) could be initiated by the hard scatter of 2 constituent partons from protons or be the decay product of another particle that was produced in the hard scatter, such as a W boson, which can then decay to 2 quarks each forming a jet. The initial parton radiates other quarks and gluons, called the "Parton Shower" and all color charged particles fragment into hardons, mainly pions and kaons,  before reaching the detector as mentioned in ~\ref{chap:MCGenReco}.
+A jet is a collimated grouping of hadrons usually associated with the LO production of a parton, quark or gluon. In this case the quark (gluon) could be initiated by the hard scatter of 2 constituent partons from protons or be the decay product of another particle that was produced in the hard scatter, such as a W boson, which can then decay to 2 quarks each forming a jet. The initial parton radiates other quarks and gluons, called the "Parton Shower" and all color charged particles fragment into hadrons, mainly pions and kaons,  before reaching the detector as mentioned in ~\ref{chap:MCGenReco}.
 
-Studies of jets at LHC are complicated by experimental complexities such as "underlying event", other partons from the same proton iteracting and depoiting energy in the same region of the detector. "Pileup" is also increasingly relevant, like "underlying event" but initiated from other proton interactions from this or a previous bunch since LHC collides $~10^{11}$ protons in bunches every 25 nanoseconds.
+Studies of jets at LHC are complicated by experimental complexities such as "underlying event", other partons from the same proton interacting and depositing energy in the same region of the detector. "Pileup" is also increasingly relevant, like "underlying event" but initiated from other proton interactions from this or a previous bunch, since the LHC crosses bunches with $~10^{11}$ protons every 25 nanoseconds.
 
 
 
-Any measurement is limited by the resolution of the measurement device and any detector effects, in this thesis the results are disentangled from the reconstructed data by "unfolding" the reconstructed distributions back to generator level.
+Any measurement is limited by the resolution of the measurement device and any detector effect. In this thesis the results are disentangled from the reconstructed data by "unfolding" the reconstructed distributions back to generator level.
 
 While jets are often used as simple proxies for the quark or gluon from which they originated, the structure of the radiation pattern of the hard scatter is encoded within the jet's constituent particles~\cite{Asquith:2018igt}. Jet studies are essential for a complete understanding of proton-proton interactions since the majority of interesting physics signatures contain a color charged parton in the final state. This chapter covers the basics of jet physics at LHC, from the algorithms used for clustering the constituent particles in experimental data to the language and calculations of the theory.
 
@@ -22,13 +22,14 @@ While jets are often used as simple proxies for the quark or gluon from which th
 
 \section{Jet Clustering Algorithms}\label{secSM:ch1}
 
-At LO, a jet represents a quark [gluon], however realistically that is not a well defined concept and a more precise definition is useful. This thesis adopts the definition presented at the Les Houghes confernece in 2015 :\newline
+At LO, a jet represents a quark [gluon], however realistically that is not a well defined concept and a more precise definition is useful. This thesis adopts the definition presented at the Les Houghes conference in 2015 :\newline
 
 "A phase space region (as defined by an unambiguous hadronic fiducial cross section measurement) that yields an enriched sample of quarks [gluons] (as interpreted by some suitable, though fundamentally ambiguous, criterion)"~\cite{Badger:2016bpw}.\newline 
 
-I will discuss one class of "suitable, though fundamentally ambiguous" criteria for defining jets, known as sequential recombination algorithms. These algorithms take pairs of particles and successively combine them into 1 particle, in a way which in intended to reconstruct the successive branchings of partons within the jet as described by perturbative QCD ~\cite{Marzani:2019hun}.
+I will discuss one class of "suitable, though fundamentally ambiguous" criteria for defining jets, known as sequential recombination algorithms. These algorithms take pairs of particles and successively combine them into 1 particle, in a way which is intended to reconstruct the successive branchings of partons within the jet as described by perturbative QCD ~\cite{Marzani:2019hun}.
  
-In sequential recombination algorithms a distance metric, $d_{ij}$, is defined between all particle pairs, these pairs are then sequentially combined in order of increasing distance.Three popular  algorithms in this class can be described by the equation ~\cite{eq:sequRec}:
+% rivello: Broken citation at the paragraph below:
+In sequential recombination algorithms a distance metric, $d_{ij}$, is defined between all particle pairs. These pairs are then sequentially combined in order of increasing distance. Three popular algorithms in this class can be described by the equation ~\cite{eq:sequRec}:
 
 
 \begin{equation}\label{eq:sequRec}
