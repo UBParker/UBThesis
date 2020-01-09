@@ -37,9 +37,9 @@ In sequential recombination algorithms a distance metric, $d_{ij}$, is defined b
 \end{equation}
 
 
-Depending on the value chosen for $p$, this equation can produce a variety of clusterings, herein I discuss the 3 popular choices $p = [1, 0, -1]$ refering to them by their names ; KT ~\cite{Ellis:1993tq}, Cambridge/Aachen ~\cite{Dokshitzer:1997in} and Anti\kt algorithms ~\cite{Cacciari:2008gp}, respectively.
+Depending on the value chosen for $p$, this equation can produce a variety of clusterings, herein I discuss the 3 popular choices $p = [1, 0, -1]$ refering to them by their names: KT ~\cite{Ellis:1993tq}, Cambridge/Aachen ~\cite{Dokshitzer:1997in} and Anti\kt algorithms ~\cite{Cacciari:2008gp} respectively.
 
-Each algorithm has its own specific use cases and drawbacks, for example, the Anti\kt algorithm produces circular jets of constant area as seen in ~\ref{fig:antikt}. 
+Each algorithm has its own specific use cases and drawbacks. For example, the Anti\kt algorithm produces circular jets of constant area as seen in ~\ref{fig:antikt}. 
 
 \begin{figure}[htb]
 \centering
@@ -50,7 +50,7 @@ Each algorithm has its own specific use cases and drawbacks, for example, the An
 
 
 
-This constant area is useful for experimental studies as it allows for simple removal of underlying event energy, which is evenly distributed throughout the jet area ~\cite{Dreyer:2018nbf}. In contrast to the other 2 algorithms described, the C/A algorithm does not contain any momentum weighting, this leads to jets which are not circular, depicted in ~\ref{fig:cashape}, and instead follow the radiation pattern of the original jet constituent particles as seen in ~\ref{fig:cashape}. The variation in the way these algorithms cluster the underlying radiation is depicted in ~\ref{fig:algclusterdiffs}, in this thesis we have chossen to recluster the Anti\kt jets with C/A in order to preserve the original radiation pattern.
+This constant area is useful for experimental studies as it allows for simple removal of underlying event energy, which is evenly distributed throughout the jet area ~\cite{Dreyer:2018nbf}. In contrast to the other 2 algorithms described, the C/A algorithm does not contain any momentum weighting, this leads to jets which are not circular, depicted in ~\ref{fig:cashape}, and instead follow the radiation pattern of the original jet constituent particles as seen in ~\ref{fig:cashape}. The variation in the way these algorithms cluster the underlying radiation is depicted in ~\ref{fig:algclusterdiffs}. In this thesis we have chosen to recluster the Anti\kt jets with C/A in order to preserve the original radiation pattern.
 
 
 %##image C/A vs anti-Kt --- visuals/config-antikt-double-lund
@@ -90,7 +90,7 @@ This constant area is useful for experimental studies as it allows for simple re
 
 \section{Jet Grooming}\label{sec:jetgroom}
 
-Jet grooming is a broad term to describe a number of different algorithms intended to remove some portion of the soft and collinear radiation within a jet. This analysis uses the Soft-Drop (SD) algorithm~\cite{softdrop} which removes soft and collinear radiation in a theoretically controlled manner. The SD procedure is as follows: Begin with an Anti\kt ~\cite{Cacciari:2008gp} clustered jet composed of particle flow candidates, reclusted with Cambridge-Aachen algorithm~\cite{Dokshitzer:1997in} to remove the \pt weighting dependance of the clustering. At this stage we regress through the clustering history, keeping a subjet if it meets of SD criterion and otherwise "dropping" it.
+Jet grooming is a broad term to describe a number of different algorithms intended to remove some portion of the soft and collinear radiation within a jet. This analysis uses the Soft-Drop (SD) algorithm~\cite{softdrop} which removes soft and collinear radiation in a theoretically controlled manner. The SD procedure is as follows: Begin with an Anti\kt ~\cite{Cacciari:2008gp} clustered jet composed of particle flow candidates, reclustered with Cambridge-Aachen algorithm~\cite{Dokshitzer:1997in} to remove the \pt weighting dependance of the clustering. At this stage we regress through the clustering history, keeping a subjet if it meets of SD criterion and otherwise "dropping" it.
 
 % FIX ME ref particle flow section
 
