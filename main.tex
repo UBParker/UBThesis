@@ -109,6 +109,12 @@
 \newcommand{\cPqt}{\PQt} % t for t quark
 \newcommand{\cPaqt}{\PAQt} % t for t anti-quark
 \newcommand{\ETm}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
+% absolute value
+\newcommand{\abs}[1]{\ensuremath{\lvert #1 \rvert}}
+\newcommand{\Pgpz}{\PGpz}
+%\newcommand{\eg}{\mbox{e.g.}\xspace}     %e.g.
+
+
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -235,7 +241,7 @@
           {Professor of  Physics}
 
 \readertwo[Committee Member]
-          {Ciaran Williams}
+          {Avtandyl Kharchilava}
           {Professor of  Physics}
 
 
@@ -249,9 +255,8 @@ Chapter-1/chap1,% Theoretical Framework
 Chapter-2/chap2,%  jets in pp collisions
 Chapter-3/chap3,% CMS experiment 
 Chapter-4/chap4,% event generation and reconstruction
-Chapter-5/chap5,% Z + jets AN 
-Chapter-6/chap6% W tagging AN
-%Appendix-A/main,%
+%Chapter-5/chap5,% Z + jets AN Chapter-6/chap6,% W tagging AN
+Appendix-A/main,%
 %Appendix-B/main%
 }
 
@@ -350,8 +355,8 @@ Chapter-6/chap6% W tagging AN
 \include{Chapter-2/chap2}
 \include{Chapter-3/chap3}
 \include{Chapter-4/chap4}
-\include{Chapter-5/chap5}
-\include{Chapter-6/chap6}
+%\include{Chapter-5/chap5}
+%\include{Chapter-6/chap6}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Appendices
 %
@@ -360,8 +365,8 @@ Chapter-6/chap6% W tagging AN
 % \addtocontents if you want things to appear the proper
 % sequence. Since the PSU Grad School requires
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\appendix
-%\include{Appendix-A/main}
+\appendix
+\include{Appendix-A/main}
 %\include{Appendix-B/main}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ESM students need to include a Nontechnical Abstract as the %

@@ -1,7 +1,46 @@
 
-\chapter{Introduction}
-
-This thesis presents a measurement of the double differential jet production cross section as a function of the jet mass and transverse momentum, in events with a Z + Jet topology, using 136 $fb^{-1}$ of data acquired from the Compact Muon Solenoid (CMS) experiment at the Large Hadron Collider (LHC) during Run 2 of data taking. This measurement improves upon the previous measurement by CMS experiment at 7 TeV center-of-mass energy ~\cite{Chatrchyan:2013vbb} and the analogous dijet measurement at 13 TeV ~\cite{Sirunyan:2018xdh} . There is a similar measurement by ATLAS experiment in the dijet channel ~\cite{Aaboud:2017qwh} however this is the first measurement in the Z + Jets channel to be presented at 13 TeV. %A leading source of systematic uncertainty in the measurement is the jet mass scale which can be improved upon using studies such as the one in chapter \ref{chap:Wtag}
+\chapter{Introduction}\label{sec:intro}
 
 
-The standard model of particle physics, while describing our universe well on many scales, has yet to be precisely measured in all energy regimes. Recent theoretical advances in higher order QCD calculations have provided a way to compare the standard model's predictions to precision measurements of data and monte carlo simulation.  Studying Z + jet events will yield a light quark enriched jet sample, which has not yet been studied at $\sqrt{s}$ = 13 TeV. Comparing groomed and ungroomed jets will allow us the better understand the jet mass in all energy regimes since the groomed jets will have varying amounts of soft and collinear radiation with respect to the ungroomed counterpart.For ungroomed jets, leading-order and next-to-leading order QCD Monte Carlo programs are found to predict the jet mass spectrum in the data reasonably well, with some disagreement at very low and very high masses. For groomed jets, the agreement between the Monte Carlo programs and the data improves overall, and extends lower in jet mass due to the removal of soft and colinear portions of the jet.First-principles theoretical calculations of the groomed jet mass are also compared to the data, and agree with the data within the range of acceptability of the calculations. Ultimately these measurements will be used to tune Monte Carlo generators, producing more accurate parton showering simulations, leading to tighter constraint of backgrounds in future searches for new physics.
+%a measurement of the double differential jet production cross section as a function of the jet mass and transverse momentum, in events with a Z + Jet topology, using 136 $fb^{-1}$ of data acquired from the Compact Muon Solenoid (CMS) experiment at the Large Hadron Collider (LHC) during Run 2 of data taking. This measurement improves upon the previous measurement by CMS experiment at 7 TeV center-of-mass energy ~\cite{Chatrchyan:2013vbb} and the analogous dijet measurement at 13 TeV ~\cite{Sirunyan:2018xdh} . There is a similar measurement by ATLAS experiment in the dijet channel ~\cite{Aaboud:2017qwh}. This is the first measurement in the Z + Jets channel to be presented at 13 TeV. %A leading source of systematic uncertainty in the measurement is the jet mass scale which can be improved upon using studies such as the one in chapter \ref{chap:Wtag}
+
+%Studying Z + jet events will yield a light quark enriched jet sample, which has not yet been studied at $\sqrt{s}$ = 13 TeV. Comparing groomed and ungroomed jets will allow us the better understand the jet mass. The grooming was acheived using jet grooming techniques discussed in ~\ref{sec:jetgroom}, leading to jets with less soft and collinear radiation with respect to the ungroomed counterpart in varying degrees depending on the grooming algorithm and choice of algorithm specific parameters. 
+
+This thesis presents a measurement of the differential production cross section
+of $Z$+jets events as a function of the jet mass and transverse
+momentum ($\pt$). The cross section is presented for events before
+and after the jets are groomed with the ``soft drop''
+procedure~\cite{softdrop}, using multiple values of the tunable parameters $\beta$ and $z_{cut}$. Each unique combination of the tunable parameters $\beta$ and $z_{cut}$ leads to a jet with less soft and collinear radiation with respect to the ungroomed counterpart in varying degrees depending on the choice. The soft drop grooming algorithm is described in more detail in ~\ref{sec:jetgroom}.
+
+
+Comparing the production cross section, described in ~\ref{sec:jetProdCrossSections} , for groomed and ungroomed jets separately allows us to, in the language of Soft-Collinear Effective Theory (SCET) described in ~\ref{sec:SCET},
+gain sensitivity to both the ``hard'' and ``soft'' jet physics. 
+The groomed cross section can be directly compared to theoretical calculations of the jet mass
+now and in the future, which is a very active area of theoretical research
+at this time~\cite{Dasgupta:2012hg,Chien:2012ur,Jouttenus:2013hs,Almeida:2014uva,Liu:2014oog,Stewart:2014nna,Khelifa-Kerfa:2015mma,Frye:2016aiz,Kolodrubetz:2016dzb}. Furthermore, separating the hard and soft jet physics
+allows a deeper understanding of the various effects involved in QCD
+radiation. In particular, Ref.~\cite{Frye:2016aiz} calculates the
+groomed jet mass at next-to-next-to-leading order using soft colinear effective theory, matched to a
+parton shower at leading order using {\tt MCFM}~\cite{MCFM1,MCFM2}, and the authors of Ref.~\cite{mmdt}  are preparing a next-to-leading logarithm calculation with traditional perturbative QCD, matched to a 
+parton shower at leading order, also using {\tt MCFM}.  In the near future we will compare these theoretical predictions to our data measurement. Both CMS and ATLAS have similar measurements in a dijet sample at Ref.~\cite{cms_jetmassDijet, atlas_jetmass2}.
+
+The analysis strategy is similar to that of Ref.~\cite{cms_jetmassDijet}.
+However, there are several differences. As in that paper, the cross section is now
+unfolded in both jet mass and $\pt$. However, while the previous measurement
+considered only one value for the soft drop parameter $\beta$, this analysis considers several.
+We apply the soft drop algorithm to compare directly to theoretical computations. Additionally, we not only measure the cross section as a function of mass, but also as a function of dimensionless mass, $\rho = 2log(m/(pt R))$, as is also done in the previously mentioned ATLAS measurement.  The dimensionless mass $\rho$ only weakly depends on $\pt$, unlike mass, which is highly correlated. Additionally, the use of this variable aids in the separation of fixed order, perturbative and non-perturbative effects.
+We present the normalized double differential jet production cross section with respect to jet mass and transverse momentum ($\pt$ ) as well as with respect to jet dimensionless mass and $\pt$ . We compute the cross sections normalized per $\pt$ bin
+(the ``normalized'' cross section) with respect to the jet $\pt$ and jet mass 
+by unfolding a binned two-dimensional distribution in $\pt$ and mass
+with widths $\Delta pt$ and $\Delta m$, respectively.
+
+The normalized differential cross section
+
+\begin{equation}
+\frac{1}{d\sigma/dpt}\frac{d^2\sigma}{dpt\,dm} = \frac{1}{N/\Delta pt} R(\frac{N_{ij}}{ \Delta pt \,\Delta m} )
+\end{equation}
+
+where $N$ is the total number of $Z+$jets events in our selection,
+$N_{ij}$ is the number of such events in $pt$ bin $i$ and mass bin $j$,
+and $R(\alpha)$ is the unfolding procedure applied to the two-dimensional
+distribution $\alpha$.
