@@ -34,7 +34,7 @@ HERWIG  ~\cite{herwigpp} is another commonly used event generator, incredibly si
 \section{Event Reconstruction with Particle Flow}\label{sec:PFReco}
 
 
-The data from proton-proton collisions at LHC are detected by the CMS experiment and then the Particle Flow (PF) event reconstruction ~\cite{Sirunyan:2017ulk} is applied to these raw detector outputs in order to construct "particle flow objects" that contain information from multiple CMS detector subsystems and constitute a global event description. More details about the CMS apparatus can be found in ~\ref{chap:CMS}. The particle flow objects are given defined object categories based on which subsystems they are measured in. This requires the use of a "link algorithm" which combines subdetector information together into a single object ~\cite{Sirunyan:2017ulk}. For example, one can see that the solid, light blue, line in figure ~\ref{fig:cmsPF} corresponds to a muon PF object as it left hits in the tracker then traversed all of the calorimeters only to deposit its energy in the muon chambers.
+The data from proton-proton collisions at LHC are detected by the CMS experiment and then the Particle Flow (PF) event reconstruction ~\cite{Sirunyan:2017ulk} is applied to these raw detector outputs in order to construct "particle flow objects" that contain information from multiple CMS detector subsystems and constitute a global event description. More details about the CMS apparatus can be found in Chapter~\ref{chap:CMS}. The particle flow objects are given defined object categories based on which subsystems they are measured in. This requires the use of a "link algorithm" which combines subdetector information together into a single object ~\cite{Sirunyan:2017ulk}. For example, one can see that the solid, light blue, line in Figure ~\ref{fig:cmsPF} corresponds to a muon PF object as it left hits in the tracker then traversed all of the calorimeters only to deposit its energy in the muon chambers.
 
 
 \begin{figure}[htb]
@@ -49,7 +49,7 @@ The data from proton-proton collisions at LHC are detected by the CMS experiment
 
 The ECAL is used to obtain the energy of photons. The energy of electrons is more complex, determined from a combination of the track momentum at the main interaction vertex, the corresponding ECAL cluster energy, and the energy sum of all bremsstrahlung photons originating from the track. The energy of muons is obtained from the corresponding track momentum. The energy of charged hadrons is determined from a combination of the track momentum and the corresponding ECAL and HCAL energies, corrected for zero-suppression effects and for the response function of the calorimeters to hadronic showers. Finally, the energy of neutral hadrons is obtained from the corresponding corrected ECAL and HCAL energies.
 
-After particle flow is used to determine the particle's type, the particle flow objects which are not categorized as muons, electrons and isolated photons are then described as hadrons and are clustered into "jets". An example PF jet with 5 constituent PF objects is depicted in ~\ref{fig:cmsPFjet}.
+After particle flow is used to determine the particle's type, the particle flow objects which are not categorized as muons, electrons and isolated photons are then described as hadrons and are clustered into "jets". An example PF jet with 5 constituent PF objects is depicted in Figure~\ref{fig:cmsPFjet}.
 
 \begin{figure}[htb]
 \centering
