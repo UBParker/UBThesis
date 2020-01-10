@@ -20,45 +20,45 @@ Warning--empty journal in Sirunyan:2019dfx
 Warning--empty journal in CAaachen
 Warning--empty journal in EXO-15-002
 Warning--empty institution in CMS:2016eto
-You've used 61 entries,
+You've used 62 entries,
             1791 wiz_defined-function locations,
-            792 strings with 12813 characters,
-and the built_in function-call counts, 12192 in all, are:
-= -- 998
-> -- 601
-< -- 3
-+ -- 225
-- -- 164
-* -- 808
-:= -- 2073
-add.period$ -- 184
-call.type$ -- 61
-change.case$ -- 59
+            798 strings with 13105 characters,
+and the built_in function-call counts, 12522 in all, are:
+= -- 1030
+> -- 605
+< -- 4
++ -- 227
+- -- 165
+* -- 822
+:= -- 2112
+add.period$ -- 187
+call.type$ -- 62
+change.case$ -- 60
 chr.to.int$ -- 0
-cite$ -- 72
-duplicate$ -- 547
-empty$ -- 1203
-format.name$ -- 164
-if$ -- 2662
+cite$ -- 73
+duplicate$ -- 568
+empty$ -- 1241
+format.name$ -- 165
+if$ -- 2748
 int.to.chr$ -- 0
-int.to.str$ -- 61
-missing$ -- 60
-newline$ -- 308
-num.names$ -- 59
-pop$ -- 123
+int.to.str$ -- 62
+missing$ -- 61
+newline$ -- 313
+num.names$ -- 60
+pop$ -- 129
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 215
+skip$ -- 231
 stack$ -- 0
-substring$ -- 643
-swap$ -- 64
-text.length$ -- 3
+substring$ -- 671
+swap$ -- 75
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 11
-while$ -- 104
-width$ -- 63
-write$ -- 653
+while$ -- 107
+width$ -- 64
+write$ -- 664
 (There were 11 warnings)

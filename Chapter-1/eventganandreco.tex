@@ -10,6 +10,22 @@ Monte Carlo (MC) event generators are tools used by both experimental and theore
 
 MC generators provide an ensemble of generated events that simulate the physics process in question. Each individual generator implements a slighly different scheme in order to approximate the neccessary calculations for the factorization and renormalization scales relevant to a process. These variations mean that the choice of MC generator will have a slight effect on the generated distributions. For this reason, in the analysis described herein we compared results from 2 different generators: PYTHIA and HERWIG.
 
+
+
+All event generators break the calculations into seperate parts as depicted by the different colored objects in Figure ~\ref{fig:MCeventpretty}  
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1.0\textwidth]{visuals/MCeventpretty.png}
+\caption{A pictoral representation of the way the MC generators simulate hadron-hadron collisions~\cite{Hoche:2014rga}.}
+\label{fig:MCeventpretty}
+\end{figure}
+
+
+
+
+
 PYTHIA ~\cite{Sjostrand:2006za} is a very commonly used general purpose event generator which uses the parton shower approach for higher order corrections to the hard scattering matrix element.
 
 HERWIG  ~\cite{herwigpp} is another commonly used event generator, incredibly similar to PYTHIA, differing mainly in hadronization and parton showering behaviors.

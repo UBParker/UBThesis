@@ -1,7 +1,7 @@
 \select@language {english}
 \contentsline {chapter}{List of Tables}{v}
 \contentsline {chapter}{List of Figures}{vi}
-\contentsline {chapter}{Abstract}{xxxiv}
+\contentsline {chapter}{Abstract}{xxxv}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {chapter}{\numberline {2}Theoretical Framework}{4}
 \contentsline {section}{\numberline {2.1}Introduction To The Standard Model}{4}
@@ -26,18 +26,18 @@
 \contentsline {chapter}{\numberline {5}Event Generation and Reconstruction}{36}
 \contentsline {section}{\numberline {5.1}Brief Introduction to Monte Carlo Event Generators}{36}
 \contentsline {section}{\numberline {5.2}Event Reconstruction with Particle Flow}{37}
-\contentsline {chapter}{\numberline {6}Measurement of the differential jet production cross section with respect to jet mass and transverse momentum in Z + Jet events from pp collisions at $\sqrt {s}$ = 13 TeV}{42}
-\contentsline {section}{\numberline {6.1}Introduction}{42}
-\contentsline {section}{\numberline {6.2}Data and MC}{43}
-\contentsline {section}{\numberline {6.3}Trigger}{47}
-\contentsline {section}{\numberline {6.4}Reconstruction and Selection}{48}
-\contentsline {section}{\numberline {6.5}Data to MC Comparisons}{55}
-\contentsline {section}{\numberline {6.6}Detector Response}{62}
-\contentsline {section}{\numberline {6.7}Uncertainties}{70}
-\contentsline {section}{\numberline {6.8}Unfolding}{75}
-\contentsline {section}{\numberline {6.9}Results}{86}
-\contentsline {section}{\numberline {6.10}Summary}{113}
-\contentsline {section}{\numberline {.1}2016 data results}{113}
-\contentsline {section}{\numberline {.2}2017 data results}{166}
-\contentsline {section}{\numberline {.3}2018 data results}{218}
-\contentsline {chapter}{\numberline {A}Relativistic Kinematics}{257}
+\contentsline {chapter}{\numberline {6}Measurement of the differential jet production cross section with respect to jet mass and transverse momentum in Z + Jet events from pp collisions at $\sqrt {s}$ = 13 TeV}{43}
+\contentsline {section}{\numberline {6.1}Introduction}{43}
+\contentsline {section}{\numberline {6.2}Data and MC}{44}
+\contentsline {section}{\numberline {6.3}Trigger}{48}
+\contentsline {section}{\numberline {6.4}Reconstruction and Selection}{49}
+\contentsline {section}{\numberline {6.5}Data to MC Comparisons}{56}
+\contentsline {section}{\numberline {6.6}Detector Response}{63}
+\contentsline {section}{\numberline {6.7}Uncertainties}{71}
+\contentsline {section}{\numberline {6.8}Unfolding}{76}
+\contentsline {section}{\numberline {6.9}Results}{87}
+\contentsline {section}{\numberline {6.10}Summary}{114}
+\contentsline {section}{\numberline {.1}2016 data results}{114}
+\contentsline {section}{\numberline {.2}2017 data results}{167}
+\contentsline {section}{\numberline {.3}2018 data results}{219}
+\contentsline {chapter}{\numberline {A}Relativistic Kinematics}{258}
