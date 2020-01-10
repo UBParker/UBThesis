@@ -37,7 +37,7 @@ In sequential recombination algorithms a distance metric, $d_{ij}$, is defined b
 \end{equation}\label{eq:sequRec}
 
 
-Depending on the value chosen for $p$, this equation can produce a variety of clusterings, herein I discuss the 3 popular choices $p = [1, 0, -1]$ refering to them by their names: KT ~\cite{Ellis:1993tq}, Cambridge/Aachen ~\cite{Dokshitzer:1997in} and Anti\kt algorithms ~\cite{Cacciari:2008gp} respectively.
+Depending on the value chosen for $p$, this equation can produce a variety of clusterings, herein I discuss the 3 popular choices $p = [1, 0, -1]$ referring to them by their names: KT ~\cite{Ellis:1993tq}, Cambridge/Aachen ~\cite{Dokshitzer:1997in} and Anti\kt algorithms ~\cite{Cacciari:2008gp} respectively.
 
 Each algorithm has its own specific use cases and drawbacks. For example, the Anti\kt algorithm produces circular jets of constant area as seen in ~\ref{fig:antikt}. 
 
@@ -90,7 +90,7 @@ This constant area is useful for experimental studies as it allows for simple re
 
 \section{Jet Grooming}\label{sec:jetgroom}
 
-Jet grooming is a broad term to describe a number of different algorithms intended to remove some portion of the soft and collinear radiation within a jet. This analysis uses the Soft-Drop (SD) algorithm~\cite{softdrop} which removes soft and collinear radiation in a theoretically controlled manner. The SD procedure is as follows: Begin with an Anti\kt ~\cite{Cacciari:2008gp} clustered jet composed of particle flow candidates, reclustered with Cambridge-Aachen algorithm~\cite{Dokshitzer:1997in} to remove the \pt weighting dependance of the clustering. At this stage we regress through the clustering history, keeping a subjet if it meets of SD criterion and otherwise "dropping" it.
+Jet grooming is a broad term to describe a number of different algorithms intended to remove some portion of the soft and collinear radiation within a jet. This analysis uses the Soft-Drop (SD) algorithm~\cite{softdrop} which removes soft and collinear radiation in a theoretically controlled manner. The SD procedure is as follows: Begin with an Anti\kt ~\cite{Cacciari:2008gp} clustered jet composed of particle flow candidates, reclustered with Cambridge-Aachen algorithm~\cite{Dokshitzer:1997in} to remove the \pt weighting dependence of the clustering. At this stage we regress through the clustering history, keeping a subjet if it meets of SD criterion and otherwise "dropping" it.
 
 % FIX ME ref particle flow section
 
@@ -146,7 +146,7 @@ compute theoretically~\cite{Dasgupta:2001sh,mmdt,softdrop,Dasgupta:2013via,Dasgu
 
 
 
-A Lund kinematic Diagram, shown in  ~\ref{fig:introlund}, is an illustration of the kinematics of emissions within a jet in terms of two variables: horizontally, the logarithm of the inverse of the angle of a given emission with respect to the jet axis, and vertically the logarithm of the emission's transverse mometum $k_t$. The line of constant jet mass and the shaded region constitute the part of the phase space in which emissions are vetoed, this leads to a Sudakov form factor~\cite{mmdt}.
+A Lund kinematic Diagram, shown in  ~\ref{fig:introlund}, is an illustration of the kinematics of emissions within a jet in terms of two variables: horizontally, the logarithm of the inverse of the angle of a given emission with respect to the jet axis, and vertically the logarithm of the emission's transverse momentum $k_t$. The line of constant jet mass and the shaded region constitute the part of the phase space in which emissions are vetoed, this leads to a Sudakov form factor~\cite{mmdt}.
 
 The Lund kinematic diagram, or Lund jet plane, is a theoretical representation of the phase space within jets, and has been a useful tool for studying parton showers in the past, and has now been extended to individual jets through repeated Cambridge/Aachen declustering ~\cite{Dreyer:2018nbf}.
 
@@ -193,14 +193,14 @@ The plain jet mass is discussed in the first subsection while a later subsection
 
 This discussion centers on "QCD jets", initiated by a hard parton and evolving via a parton shower but stopping at parton level as perturbation theory is not able to describe the transition to particle level~\cite{Marzani:2019hun}. Event generators employ different hadronization techniques to describe the parton-to-hadron transition, those used in this thesis are discussed in Section ~\ref{secMCGen}.
 
-Within the valid phase space of perturbative QCD on finds that the fixed-order approach to jet mass is inadequate, most noticably in the boosted regime as each emission contributes a large logarithm~\cite{Marzani:2019hun}. All-order resummation techniques are then exploited to theoretically describe the jet mass observable more accurately than is possible with fixed-order. 
+Within the valid phase space of perturbative QCD on finds that the fixed-order approach to jet mass is inadequate, most noticeably in the boosted regime as each emission contributes a large logarithm~\cite{Marzani:2019hun}. All-order resummation techniques are then exploited to theoretically describe the jet mass observable more accurately than is possible with fixed-order. 
 
 
 
 \subsection{Plain Jet Mass }\label{sec:jetmass}
 
 
-In this section quark jet mass calculations are discussed at LO. It is first useful to define the dimensionless jet mass, $\rho$ , as the plain mass is $\pt$ dependant.
+In this section quark jet mass calculations are discussed at LO. It is first useful to define the dimensionless jet mass, $\rho$ , as the plain mass is $\pt$ dependent.
 
 
 \begin{equation}
@@ -265,7 +265,7 @@ L_{\text {peak }}=1 / \sqrt{\bar{\alpha}_{s}}+\mathcal{O}(1)
 
 
 
-Higher order corrections to the hard process are nessessary in order to properly predict measurements in the non-perturbative regime. This can be seen clearly in the dijet dimensionless mass spectrum measured by the ATLAS collaboration (Maybe replace with our result but I am not sure which plot to use as ours seem to agree even at low mass[presumably bc we only showed the more accurate predictions by Marzani and Frye rather than all of the others] ) ~\ref{fig:atlasDijet}
+Higher order corrections to the hard process are necessary in order to properly predict measurements in the non-perturbative regime. This can be seen clearly in the dijet dimensionless mass spectrum measured by the ATLAS collaboration (Maybe replace with our result but I am not sure which plot to use as ours seem to agree even at low mass[presumably bc we only showed the more accurate predictions by Marzani and Frye rather than all of the others] ) ~\ref{fig:atlasDijet}
 
 
 \begin{figure}[htb]
@@ -291,7 +291,7 @@ To expand upon the simple calculation above to include additional emissions, one
 \begin{figure}[htb]
 \centering
 \includegraphics[width=.60\textwidth]{visuals/softgluon.png}
-\caption{Above the incoming hard partons, of momenta $p_1$ and $p_2$, form a jet of mometum $p_3$ and a soft gluon of momentum $k_t$ is radiated as initial state radiation. For simplicity the assumption is made that the jet was produced at $\phi = 0$  }
+\caption{Above the incoming hard partons, of momenta $p_1$ and $p_2$, form a jet of momentum $p_3$ and a soft gluon of momentum $k_t$ is radiated as initial state radiation. For simplicity the assumption is made that the jet was produced at $\phi = 0$  }
 \label{softgluon}
 \end{figure}
 
@@ -353,7 +353,7 @@ The jet mass distribution for soft-dropped jets differs from the plain jet becau
 \begin{figure}[htb]
 \centering
 \includegraphics[width=.60\textwidth]{visuals/mmdtsoftdropLund.png}
-\caption{Lund diagrams for : (a) The modified mass drop tagger, (b) The Soft-Drop prodecure . The dotted green line is the edge of the dropped region in both cases. }
+\caption{Lund diagrams for : (a) The modified mass drop tagger, (b) The Soft-Drop procedure . The dotted green line is the edge of the dropped region in both cases. }
 \label{fig:mmdtsoftdropLund}
 \end{figure}
 
@@ -378,7 +378,7 @@ R_{\mathrm{SD}}(\rho)=\int_{0}^{1} \frac{d \theta^{2}}{\theta^{2}} d z P_{i}(z) 
 \end{equation}
 
 
-Including the folling term accounts for a running coupling correction~\cite{Marzani:2019hun}
+Including the following term accounts for a running coupling correction~\cite{Marzani:2019hun}
 
 \begin{equation}
 \alpha_{s}\left(z \theta p_{t} R\right)=\frac{\alpha_{s}\left(p_{t} R\right)}{1+2 \alpha_{s} \beta_{0} \log (z \theta)}
