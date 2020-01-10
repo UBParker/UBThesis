@@ -1,24 +1,24 @@
 \chapter{Event Generation and Reconstruction}\label{chap:MCGenReco}
 
 
-The events used for this measurement were reconstructed from data aquired by the CMS detector in the case of the data and generated using monte carlo generators PYTHIA and HERWIG in the case of the generated data.
+The events used for this measurement were reconstructed from data acquired by the CMS detector in the case of the data and generated using Monte Carlo generators PYTHIA and HERWIG in the case of the generated data.
 
 \section{Brief Introduction to Monte Carlo Event Generators}\label{secMCGen}
 
 Monte Carlo (MC) event generators are tools used by both experimental and theoretical physicists to simulate different physical processes in order to make predictions and prepare future experiments. The main tasks of such generators are to calculate matrix elements of the relevant hard processes but they must also describe parton showering, hadronization and underlying event. MC can be utilized to extrapolate data measurements beyond the acceptance of the detector or in the case of this thesis it is used in the unfolding process to correct the data for detector efficiency and resolution.
 
 
-MC generators provide an ensemble of generated events that simulate the physics process in question. Each individual generator implements a slighly different scheme in order to approximate the neccessary calculations for the factorization and renormalization scales relevant to a process. These variations mean that the choice of MC generator will have a slight effect on the generated distributions. For this reason, in the analysis described herein we compared results from 2 different generators: PYTHIA and HERWIG.
+MC generators provide an ensemble of generated events that simulate the physics process in question. Each individual generator implements a slightly different scheme in order to approximate the necessary calculations for the factorization and renormalization scales relevant to a process. These variations mean that the choice of MC generator will have a slight effect on the generated distributions. For this reason, in the analysis described herein we compared results from 2 different generators: PYTHIA and HERWIG.
 
 
 
-All event generators break the calculations into seperate parts as depicted by the different colored objects in Figure ~\ref{fig:MCeventpretty}  
+All event generators break the calculations into separate parts as depicted by the different colored objects in Figure ~\ref{fig:MCeventpretty}  
 
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=1.0\textwidth]{visuals/MCeventpretty.png}
-\caption{A pictoral representation of the way the MC generators simulate hadron-hadron collisions~\cite{Hoche:2014rga}.}
+\caption{A pictorial representation of the way the MC generators simulate hadron-hadron collisions~\cite{Hoche:2014rga}.}
 \label{fig:MCeventpretty}
 \end{figure}
 
@@ -40,7 +40,7 @@ The data from proton-proton collisions at LHC are detected by the CMS experiment
 \begin{figure}[htb]
 \centering
 \includegraphics[width=1.0\textwidth]{Chapter-1/cmsPflow.png}
-\caption{A pictoral representation of the way the Particle Flow algorithm determines which objects correspond to which particles based on an optimal combination of sub-detector information ~\cite{Sirunyan:2017ulk}.}
+\caption{A pictorial representation of the way the Particle Flow algorithm determines which objects correspond to which particles based on an optimal combination of sub-detector information ~\cite{Sirunyan:2017ulk}.}
 \label{fig:cmsPF}
 \end{figure}
 
@@ -54,7 +54,7 @@ After particle flow is used to determine the particle's type, the particle flow 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=1.0\textwidth]{Chapter-1/cmsPflowjet.png}
-\caption{A pictoral representation of the way the Particle Flow objects are clustered into jets ~\cite{Sirunyan:2017ulk}. The top image shows a jet composed of 5 PF candidates in the x,y plane and the concentric circles describe the surfaces of the ECAL and HCAL detectors respectively. The lower left image is the PF candidates as measured by the ECAL and the image on the lower right shows the same for the HCAL surface. The dotted lines represent generated particles and the solid boxes represent energy deposits in the detector. }
+\caption{A pictorial representation of the way the Particle Flow objects are clustered into jets ~\cite{Sirunyan:2017ulk}. The top image shows a jet composed of 5 PF candidates in the x,y plane and the concentric circles describe the surfaces of the ECAL and HCAL detectors respectively. The lower left image is the PF candidates as measured by the ECAL and the image on the lower right shows the same for the HCAL surface. The dotted lines represent generated particles and the solid boxes represent energy deposits in the detector. }
 \label{fig:cmsPFjet}
 \end{figure}
 
