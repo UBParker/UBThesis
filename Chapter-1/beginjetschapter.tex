@@ -6,7 +6,7 @@
 
 
 
-A jet is a collimated grouping of hadrons usually associated with the LO production of a parton, quark or gluon. In this case the quark (gluon) could be initiated by the hard scatter of 2 constituent partons from protons or be the decay product of another particle that was produced in the hard scatter, such as a W boson, which can then decay to 2 quarks each forming a jet. The initial parton radiates other quarks and gluons, called the "Parton Shower" and all color charged particles fragment into hadrons, mainly pions and kaons,  before reaching the detector as mentioned in ~\ref{chap:MCGenReco}.
+A jet is a collimated grouping of hadrons usually associated with the LO production of a parton, quark or gluon. In this case the quark (gluon) could be initiated by the hard scatter of 2 constituent partons from protons or be the decay product of another particle that was produced in the hard scatter, such as a W boson, which can then decay to 2 quarks each forming a jet. The initial parton radiates other quarks and gluons, called the "Parton Shower" and all color charged particles fragment into hadrons, mainly pions and kaons,  before reaching the detector as mentioned in Chapter~\ref{chap:MCGenReco}.
 
 Studies of jets at LHC are complicated by experimental complexities such as "underlying event", other partons from the same proton interacting and depositing energy in the same region of the detector. "Pileup" is also increasingly relevant, like "underlying event" but initiated from other proton interactions from this or a previous bunch, since the LHC crosses bunches with $~10^{11}$ protons every 25 nanoseconds.
 
@@ -39,7 +39,7 @@ In sequential recombination algorithms a distance metric, $d_{ij}$, is defined b
 
 Depending on the value chosen for $p$, this equation can produce a variety of clusterings, herein I discuss the 3 popular choices $p = [1, 0, -1]$ referring to them by their names: KT ~\cite{Ellis:1993tq}, Cambridge/Aachen ~\cite{Dokshitzer:1997in} and Anti\kt algorithms ~\cite{Cacciari:2008gp} respectively.
 
-Each algorithm has its own specific use cases and drawbacks. For example, the Anti\kt algorithm produces circular jets of constant area as seen in ~\ref{fig:antikt}. 
+Each algorithm has its own specific use cases and drawbacks. For example, the Anti\kt algorithm produces circular jets of constant area as seen in Figure~\ref{fig:antikt}. 
 
 \begin{figure}[htb]
 \centering
@@ -50,7 +50,7 @@ Each algorithm has its own specific use cases and drawbacks. For example, the An
 
 
 
-This constant area is useful for experimental studies as it allows for simple removal of underlying event energy, which is evenly distributed throughout the jet area ~\cite{Dreyer:2018nbf}. In contrast to the other 2 algorithms described, the C/A algorithm does not contain any momentum weighting, this leads to jets which are not circular, depicted in ~\ref{fig:cashape}, and instead follow the radiation pattern of the original jet constituent particles as seen in ~\ref{fig:cashape}. The variation in the way these algorithms cluster the underlying radiation is depicted in ~\ref{fig:algclusterdiffs}. In this thesis we have chosen to recluster the Anti\kt jets with C/A in order to preserve the original radiation pattern.
+This constant area is useful for experimental studies as it allows for simple removal of underlying event energy, which is evenly distributed throughout the jet area ~\cite{Dreyer:2018nbf}. In contrast to the other 2 algorithms described, the C/A algorithm does not contain any momentum weighting, this leads to jets which are not circular, depicted in Figure~\ref{fig:cashape}, and instead follow the radiation pattern of the original jet constituent particles as seen in Figure~\ref{fig:cashape}. The variation in the way these algorithms cluster the underlying radiation is depicted in Figure~\ref{fig:algclusterdiffs}. In this thesis we have chosen to recluster the Anti\kt jets with C/A in order to preserve the original radiation pattern.
 
 
 %##image C/A vs anti-Kt --- visuals/config-antikt-double-lund
@@ -108,7 +108,7 @@ drop procedure. The tunable parameters, $\beta$ and $z_{cut}$, control the degre
 $\beta$ tunes the algorithm's sensitivity to wide-angle radiation, while $z_{cut}$ sets the energy scale
 of the grooming. In the case of $\beta \rightarrow \infty$, an ungroomed jet is returned. 
 In the $\beta = 0$ case, the soft drop procedure is identical to the ``modified mass drop tagger'' (MMDT)
-from Ref.~\cite{mmdt}. For $\beta > 0$  soft emissions are removed from the jet while the majority of the collinear emissions remain, as illustrated in ~\ref{fig:softdroplund}. 
+from Ref.~\cite{mmdt}. For $\beta > 0$  soft emissions are removed from the jet while the majority of the collinear emissions remain, as illustrated in Figure~\ref{fig:softdroplund}. 
 
 
 \begin{figure}[htb]
@@ -146,7 +146,7 @@ compute theoretically~\cite{Dasgupta:2001sh,mmdt,softdrop,Dasgupta:2013via,Dasgu
 
 
 
-A Lund kinematic Diagram, shown in  ~\ref{fig:introlund}, is an illustration of the kinematics of emissions within a jet in terms of two variables: horizontally, the logarithm of the inverse of the angle of a given emission with respect to the jet axis, and vertically the logarithm of the emission's transverse momentum $k_t$. The line of constant jet mass and the shaded region constitute the part of the phase space in which emissions are vetoed, this leads to a Sudakov form factor~\cite{mmdt}.
+A Lund kinematic Diagram, shown in Figure~\ref{fig:introlund}, is an illustration of the kinematics of emissions within a jet in terms of two variables: horizontally, the logarithm of the inverse of the angle of a given emission with respect to the jet axis, and vertically the logarithm of the emission's transverse momentum $k_t$. The line of constant jet mass and the shaded region constitute the part of the phase space in which emissions are vetoed, this leads to a Sudakov form factor~\cite{mmdt}.
 
 The Lund kinematic diagram, or Lund jet plane, is a theoretical representation of the phase space within jets, and has been a useful tool for studying parton showers in the past, and has now been extended to individual jets through repeated Cambridge/Aachen declustering ~\cite{Dreyer:2018nbf}.
 
@@ -169,7 +169,7 @@ The Lund kinematic diagram, or Lund jet plane, is a theoretical representation o
 \end{figure}
 
 
-The primary Lund plane is shown on the bottom of Figure ~\ref{fig:lundPrimaryandSecondary} ~\cite{Dreyer:2018nbf} where the black particle (a) "initiated" the jet and is described by the grey shaded region and particles (b) and (c) are marked with dots and constitute emissions within the jet. In contrast, the Lund diagram shows the phase space encompassed by each subsequent emission, not just the emission (a).~\cite{Dreyer:2018nbf}
+The primary Lund plane is shown on the bottom of Figure~\ref{fig:lundPrimaryandSecondary} ~\cite{Dreyer:2018nbf} where the black particle (a) "initiated" the jet and is described by the grey shaded region and particles (b) and (c) are marked with dots and constitute emissions within the jet. In contrast, the Lund diagram shows the phase space encompassed by each subsequent emission, not just the emission (a).~\cite{Dreyer:2018nbf}
 %image 
 
 
@@ -225,7 +225,7 @@ Above the quark-gluon splitting function is $p_{g q}=\frac{1+(1-z)^{2}}{2 z}$. T
 D(\rho) \simeq \frac{\alpha_{s} C_{F}}{\pi}\left[\frac{1}{2} \ln ^{2} \frac{1}{\rho}-\frac{3}{4} \ln \frac{1}{\rho}+\mathcal{O}(1)\right], \quad \text { (fixed coupling approx.) }
 \end{equation}
 
-In terms of the Lund diagram, discussed in ~\ref{sec:lundjetplane}, the above equation can be described simply, as the $\frac{1}{2} \ln ^{2} \frac{1}{\rho}$ term represents the bulk of the area of ~\ref{fig:introlund} and the $-\frac{3}{4} \ln \frac{1}{\rho}$ term is due to the hard collinear region where z is finite.
+In terms of the Lund diagram, discussed in Section~\ref{sec:lundjetplane}, the above equation can be described simply, as the $\frac{1}{2} \ln ^{2} \frac{1}{\rho}$ term represents the bulk of the area of Figure~\ref{fig:introlund} and the $-\frac{3}{4} \ln \frac{1}{\rho}$ term is due to the hard collinear region where z is finite.
 
 
 The Next-to-Leading Logarithm (NLL) approximation gives the integrated jet mass distribution :\newline
@@ -235,7 +235,7 @@ The Next-to-Leading Logarithm (NLL) approximation gives the integrated jet mass 
 \Sigma(\rho)=e^{-D(\rho)} \cdot \frac{e^{-\gamma_{E} D^{\prime}(\rho)}}{\Gamma\left(1+D^{\prime}(\rho)\right)} \cdot \mathcal{N}(\rho)
 \end{equation}
 
-In the above equation, the first term accounts for the Sudakov Suppression of emissions that would induce a jet mass greater than $\rho$. To restate this in the language of the Lund diagram, this is the probability that there are no emissions in the shaded region of ~\ref{fig:introlund}. The central term encodes the information of single-logarithmic corrections from multiple emissions, generally near the line of constant jet mass in ~\ref{fig:introlund}, sum together to obtain the total jet mass. The final factor accounts for variations in the jets radiation pattern (non-global logarithms ) and boundaries of the jet (clustering logarithms ) induced by soft radiation near the jet’s edge, i.e. near the left-hand, vertical edge of the shaded region in  ~\ref{fig:introlund} ~\cite{mmdt}. Note that the non-global logarithms are problematic and that is the main reason why there does not exist a full resummation of the standard jet mass beyond NLL accuracy ~\cite{mmdt}.
+In the above equation, the first term accounts for the Sudakov Suppression of emissions that would induce a jet mass greater than $\rho$. To restate this in the language of the Lund diagram, this is the probability that there are no emissions in the shaded region of Figure~\ref{fig:introlund}. The central term encodes the information of single-logarithmic corrections from multiple emissions, generally near the line of constant jet mass in Figure~\ref{fig:introlund}, sum together to obtain the total jet mass. The final factor accounts for variations in the jets radiation pattern (non-global logarithms ) and boundaries of the jet (clustering logarithms ) induced by soft radiation near the jet’s edge, i.e. near the left-hand, vertical edge of the shaded region in Figure~\ref{fig:introlund} ~\cite{mmdt}. Note that the non-global logarithms are problematic and that is the main reason why there does not exist a full resummation of the standard jet mass beyond NLL accuracy ~\cite{mmdt}.
 
 
 In order to better visualize the jet mass distribution, one can take the fixed coupling approximation then look at only the leading order differential jet mass distribution.~\cite{mmdt}
@@ -244,7 +244,7 @@ In order to better visualize the jet mass distribution, one can take the fixed c
 \frac{\rho}{\sigma} \frac{d \sigma}{d \rho} \simeq \frac{\alpha_{s} C_{F}}{\pi}\left(\ln \frac{1}{\rho}-\frac{3}{4}\right) e^{-\frac{\alpha_{s} C_{F}}{2 \pi}\left(\ln ^{2} \frac{1}{\rho}-\frac{3}{2} \ln \frac{1}{\rho}+\mathcal{O}(1)\right)}
 \end{equation}
 
-The above distribution allows one to see why the red line for plain jet mass looks as it does in the figure ~\ref{fig:quarkGluonPlainvsGroomedMass}.
+The above distribution allows one to see why the red line for plain jet mass looks as it does in the Figure ~\ref{fig:quarkGluonPlainvsGroomedMass}.
 
 \begin{figure}[htb]
 \centering
@@ -255,7 +255,7 @@ The above distribution allows one to see why the red line for plain jet mass loo
 
 
 
- Starting from the far right of the distributions in ~\ref{fig:quarkGluonPlainvsGroomedMass} one can see that as $\rho$ decreases the plain jet mass (red line) grows linearly in $\ln \frac{1}{\rho}$ only to be cut off by Sudakov suppression (The exponential term in the jet mass equation at LO). Notice that the peak of the distributions can be calculated using ~\cite{mmdt}:\newline
+ Starting from the far right of the distributions in Figure~\ref{fig:quarkGluonPlainvsGroomedMass} one can see that as $\rho$ decreases the plain jet mass (red line) grows linearly in $\ln \frac{1}{\rho}$ only to be cut off by Sudakov suppression (The exponential term in the jet mass equation at LO). Notice that the peak of the distributions can be calculated using ~\cite{mmdt}:\newline
 
 \begin{equation}
 L_{\text {peak }}=1 / \sqrt{\bar{\alpha}_{s}}+\mathcal{O}(1)
@@ -265,7 +265,7 @@ L_{\text {peak }}=1 / \sqrt{\bar{\alpha}_{s}}+\mathcal{O}(1)
 
 
 
-Higher order corrections to the hard process are necessary in order to properly predict measurements in the non-perturbative regime. This can be seen clearly in the dijet dimensionless mass spectrum measured by the ATLAS collaboration (Maybe replace with our result but I am not sure which plot to use as ours seem to agree even at low mass[presumably bc we only showed the more accurate predictions by Marzani and Frye rather than all of the others] ) ~\ref{fig:atlasDijet}
+Higher order corrections to the hard process are necessary in order to properly predict measurements in the non-perturbative regime. This can be seen clearly in the dijet dimensionless mass spectrum measured by the ATLAS collaboration (Maybe replace with our result but I am not sure which plot to use as ours seem to agree even at low mass[presumably bc we only showed the more accurate predictions by Marzani and Frye rather than all of the others] ) Figure~\ref{fig:atlasDijet}
 
 
 \begin{figure}[htb]
@@ -284,7 +284,7 @@ Higher order corrections to the hard process are necessary in order to properly 
 \subsection{Initial-State Radiation Contributions to Jet Mass }\label{sec:jetmassISR}
 
 
-To expand upon the simple calculation above to include additional emissions, one can consider the case of emission of a soft gluon from a dipole formed by 2 hard quarks. This process is illustrated in Figure ~\ref{softgluon}.
+To expand upon the simple calculation above to include additional emissions, one can consider the case of emission of a soft gluon from a dipole formed by 2 hard quarks. This process is illustrated in Figure~\ref{softgluon}.
 
 
 
