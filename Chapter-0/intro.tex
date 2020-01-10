@@ -10,34 +10,28 @@ This thesis presents a measurement of the differential production cross section
 of $Z$+jets events as a function of the jet mass and transverse
 momentum ($\pt$). The cross section is presented for events before
 and after the jets are groomed with the ``soft drop''
-procedure~\cite{softdrop}, using multiple values of the tunable parameters $\beta$ and $z_{cut}$. Each unique combination of the tunable parameters $\beta$ and $z_{cut}$ leads to a jet with less soft and collinear radiation with respect to the ungroomed counterpart in varying degrees depending on the choice. The soft drop grooming algorithm is described in more detail in Section~\ref{sec:jetgroom}.
-
-
-Comparing the production cross section for groomed and ungroomed jets separately allows us to, in the language of Soft-Collinear Effective Theory (SCET) described in Section~\ref{sec:SCET},
-gain sensitivity to both the ``hard'' and ``soft'' jet physics. 
+procedure~\cite{softdrop}, using multiple values of the tunable parameters $\beta$ and $z_{cut}$. Each unique combination of the tunable parameters $\beta$ and $z_{cut}$ leads to a jet with varying degrees of soft and collinear radiation with respect to the ungroomed counterpart. The soft drop grooming algorithm is described in more detail in Section~\ref{sec:jetgroom}. Comparing the production cross section for groomed and ungroomed jets separately allows us to,measure jets with and without including soft radiation. 
 The groomed cross section can be directly compared to theoretical calculations of the jet mass
 now and in the future, which is a very active area of theoretical research
-at this time~\cite{Dasgupta:2012hg,Chien:2012ur,Jouttenus:2013hs,Almeida:2014uva,Liu:2014oog,Stewart:2014nna,Khelifa-Kerfa:2015mma,Frye:2016aiz,Kolodrubetz:2016dzb}. Furthermore, separating the hard and soft jet physics
-allows a deeper understanding of the various effects involved in QCD
-radiation. In particular, Ref.~\cite{Frye:2016aiz} calculates the
+at this time~\cite{Dasgupta:2012hg,Chien:2012ur,Jouttenus:2013hs,Almeida:2014uva,Liu:2014oog,Stewart:2014nna,Khelifa-Kerfa:2015mma,Frye:2016aiz,Kolodrubetz:2016dzb}. In particular, Ref.~\cite{Frye:2016aiz} calculates the
 groomed jet mass at next-to-next-to-leading order using soft colinear effective theory, matched to a
-parton shower at leading order using {\tt MCFM}~\cite{MCFM1,MCFM2}, and the authors of Ref.~\cite{mmdt}  are preparing a next-to-leading logarithm calculation with traditional perturbative QCD, matched to a 
-parton shower at leading order, also using {\tt MCFM}.  In the near future we will compare these theoretical predictions to our data measurement. Both CMS and ATLAS have similar measurements in a dijet sample at Ref.~\cite{cms_jetmassDijet, atlas_jetmass2}.
+parton shower at leading order using {\tt MCFM}~\cite{MCFM1,MCFM2}, and the authors of Ref.~\cite{mmdt} have calculated a next-to-leading logarithm calculation with traditional perturbative QCD, matched to a 
+parton shower at leading order, also using {\tt MCFM}.  In the near future we will compare similar theoretical predictions to our data measurement. Both CMS and ATLAS have similar measurements in a dijet sample at Ref.~\cite{cms_jetmassDijet, atlas_jetmass2}.
 
 The analysis strategy is similar to that of Ref.~\cite{cms_jetmassDijet}.
 However, there are several differences. As in that paper, the cross section is now
 unfolded in both jet mass and $\pt$. However, while the previous measurement
 considered only one value for the soft drop parameter $\beta$, this analysis considers several.
-We apply the soft drop algorithm to compare directly to theoretical computations. Additionally, we not only measure the cross section as a function of mass, but also as a function of dimensionless mass, $\rho = 2log(m/(pt R))$, as is also done in the previously mentioned ATLAS measurement.  The dimensionless mass $\rho$ only weakly depends on $\pt$, unlike mass, which is highly correlated. Additionally, the use of this variable aids in the separation of fixed order, perturbative and non-perturbative effects.
+Additionally, we not only measure the cross section as a function of mass, but also as a function of dimensionless mass, $\rho = 2log(m/(pt R))$, as is also done in the previously mentioned ATLAS measurement.  The dimensionless mass $\rho$ only weakly depends on $\pt$, unlike mass, which is highly correlated.
 We present the normalized double differential jet production cross section with respect to jet mass and transverse momentum ($\pt$ ) as well as with respect to jet dimensionless mass and $\pt$ . We compute the cross sections normalized per $\pt$ bin
 (the ``normalized'' cross section) with respect to the jet $\pt$ and jet mass 
 by unfolding a binned two-dimensional distribution in $\pt$ and mass
 with widths $\Delta pt$ and $\Delta m$, respectively.
 
-The normalized differential cross section
+The normalized differential cross section is:
 
 \begin{equation}
-\frac{1}{d\sigma/dpt}\frac{d^2\sigma}{dpt\,dm} = \frac{1}{N/\Delta pt} R(\frac{N_{ij}}{ \Delta pt \,\Delta m} )
+\frac{1}{d\sigma dp_t}\frac{d^2\sigma}{dp_t,dm} = \frac{1}{N_i \Delta {p_t}_i } R(\frac{N_{ij}}{ \Delta {p_t}_i ,\Delta m_j} )
 \end{equation}
 
 where $N$ is the total number of $Z+$jets events in our selection,
