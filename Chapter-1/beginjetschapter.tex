@@ -29,12 +29,12 @@ At LO, a jet represents a quark [gluon], however realistically that is not a wel
 I will discuss one class of "suitable, though fundamentally ambiguous" criteria for defining jets, known as sequential recombination algorithms. These algorithms take pairs of particles and successively combine them into 1 particle, in a way which is intended to reconstruct the successive branchings of partons within the jet as described by perturbative QCD ~\cite{Marzani:2019hun}.
  
 % rivello: Broken citation at the paragraph below:
-In sequential recombination algorithms a distance metric, $d_{ij}$, is defined between all particle pairs. These pairs are then sequentially combined in order of increasing distance. Three popular algorithms in this class can be described by the equation ~\cite{eq:sequRec}:
+In sequential recombination algorithms a distance metric, $d_{ij}$, is defined between all particle pairs. These pairs are then sequentially combined in order of increasing distance. Three popular algorithms in this class can be described by the equation ~\ref{eq:sequRec}:
 
 
-\begin{equation}\label{eq:sequRec}
+\begin{equation}
 \begin{array}{l}{d_{i j}=\min \left(p_{t i}^{2 p}, p_{t j}^{2 p}\right) \frac{\Delta R_{i j}^{2}}{R^{2}} \quad \Delta R_{i j}^{2}=\left(y_{i}-y_{j}\right)^{2}+\left(\phi_{i}-\phi_{j}\right)^{2}} \\ {d_{i B}=p_{t i}^{2 p}}\end{array}
-\end{equation}
+\end{equation}\label{eq:sequRec}
 
 
 Depending on the value chosen for $p$, this equation can produce a variety of clusterings, herein I discuss the 3 popular choices $p = [1, 0, -1]$ refering to them by their names: KT ~\cite{Ellis:1993tq}, Cambridge/Aachen ~\cite{Dokshitzer:1997in} and Anti\kt algorithms ~\cite{Cacciari:2008gp} respectively.
@@ -181,7 +181,21 @@ The primary Lund plane is shown on the bottom of Figure ~\ref{fig:lundPrimaryand
 \section{Jet Mass}\label{sec:jetmass}
 
 
-Jet mass is a simple observable, useful for probing QCD. The calculations for the jet mass at leading order are described below for the plain and soft-drop groomed jets.
+The calculations for the jet mass in perturbative QCD are described in this section. Jet invariant mass is a simple observable, useful for probing QCD, it is defined as:\newline
+
+\begin{equation}
+m^{2}=\left(\sum_{i \in \mathrm{jet}} k_{i}\right)^{2}
+\end{equation}
+
+the summation includes all particles $i$ clustered into the jet. In the case of this thesis the particles are particle-flow candidates, Section ~\ref{sec:PFReco} contains information on how the events for this thesis were reconstructed.
+
+The plain jet mass is discussed in the first subsection while a later subsection shows how the jet mass distribution is calculated for jets modified by a "grooming" algorithm, in this case soft-drop ~\cite{softdrop} , as are the jets in the groomed measurement presented herein.
+
+This discussion centers on "QCD jets", initiated by a hard parton and evolving via a parton shower but stopping at parton level as perturbation theory is not able to describe the transition to particle level~\cite{Marzani:2019hun}. Event generators employ different hadronization techniques to describe the parton-to-hadron transition, those used in this thesis are discussed in Section ~\ref{secMCGen}.
+
+Within the valid phase space of perturbative QCD on finds that the fixed-order approach to jet mass is inadequate, most noticably in the boosted regime as each emission contributes a large logarithm~\cite{Marzani:2019hun}. All-order resummation techniques are then exploited to theoretically describe the jet mass observable more accurately than is possible with fixed-order. 
+
+
 
 \subsection{Plain Jet Mass }\label{sec:jetmass}
 
@@ -195,7 +209,7 @@ In this section quark jet mass calculations are discussed at LO. It is first use
 
 
 
-Using the small-angle approximation, $\rho$ is invariant under Lorentz boosts along the jet axis direction, since they scale the jet $\pt$ up by some factor (say $\kappa$ ) and scale its opening angle by the inverse factor ($\frac{1}{\kappa}$) while leaving the mass unchanged. Due to this invariance, the analytical results are often simplest when expressed in terms of $\rho$ ~\cite{mmdt}.
+Using the small-angle approximation, $\rho$ is invariant under Lorentz boosts along the jet axis direction, since boosts vary the jet $\pt$ up by some factor (say $\kappa$ ) and scale its opening angle by the inverse factor ($\frac{1}{\kappa}$) while leaving the mass unchanged. Due to this invariance, the analytical results are often simplest when expressed in terms of $\rho$ ~\cite{mmdt}.
 
 Now the integrated jet mass distribution can be defined as :\newline
 
@@ -264,6 +278,150 @@ Higher order corrections to the hard process are nessessary in order to properly
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Initial-State Radiation Contributions to Jet Mass }\label{sec:jetmassISR}
+
+
+To expand upon the simple calculation above to include additional emissions, one can consider the case of emission of a soft gluon from a dipole formed by 2 hard quarks. This process is illustrated in Figure ~\ref{softgluon}.
+
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.60\textwidth]{visuals/softgluon.png}
+\caption{Above the incoming hard partons, of momenta $p_1$ and $p_2$, form a jet of mometum $p_3$ and a soft gluon of momentum $k_t$ is radiated as initial state radiation. For simplicity the assumption is made that the jet was produced at $\phi = 0$  }
+\label{softgluon}
+\end{figure}
+
+
+If the soft gluon from the kinematic diagram is clustered with the jet then it will make the following contribution to the jet mass ~\cite{Marzani:2019hun}:\newline
+
+
+\begin{equation}
+m^{2}=\left(p_{3}+k\right)^{2}=2 p_{3} \cdot k=2 p_{t} k_{t}(\cosh (\eta-y)-\cos \phi)
+\end{equation}
+
+Given the above, one can write the contribution to the cumulative distribution as :\newline
+
+\begin{equation}
+\begin{aligned} \alpha_{s} \Sigma_{12}^{(1)} &=C_{12} \int k_{t} d k_{t} d \eta \frac{d \phi}{2 \pi} \frac{\alpha_{s}\left(\kappa_{12}\right)}{2 \pi} \frac{\left(p_{1} \cdot p_{2}\right)}{\left(p_{1} \cdot k\right)\left(p_{2} \cdot k\right)} \Theta\left((\eta-y)^{2}+\phi^{2}<R^{2}\right) \\ & \cdot\left(\frac{2 k_{t}}{p_{t} R^{2}}(\cosh (\eta-y)-\cos \phi)>\rho\right) \end{aligned}
+\end{equation}
+
+$\Theta$ is the jet clustering condition~\cite{Marzani:2019hun}. Integrating and simplifying one finds:\newline
+
+\begin{equation}
+\alpha_{s} \Sigma_{12}^{(1)}=C_{12} R^{2} \int_{\rho p_{t}}^{p_{t}} \frac{\alpha_{s}\left(k_{t}\right)}{2 \pi} \frac{d k_{t}}{k_{t}}
+\end{equation}
+
+The equation tells us that the soft gluon will not give rise to collinear enhancements since it is away from the hard partons in the process. The lower limit on the integration comes from the jet mass constraint.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Jet Mass in Proton-Proton $\rightarrow$ Z + jet }\label{sec:jetmass}
+
+The specific jet production channel studied in this thesis is Z + jet. This process is useful to study as it produces a sample of light quark enriched jets for the measurement as opposed to the dijet measurements previously performed by CMS and ATLAS, those studied a quark-gluon admixture enriched jet sample. In principle, the interaction is simpler than the dijet case having only 3 coloured hard legs as opposed to 4~\cite{Marzani:2019hun}. Additionally, the Z + jets channel is interesting to understand in the boosted regime, $\pt >> m$ , as it is the main background in searches for a boosted Higgs boson recoiling off a Z boson ~\cite{Marzani:2019hun}.
+
+
+
+
+
+The Figure ~\ref{fig:quarkandgluoninzplusjet}, shows calculations at Born level for 2 partonic processes: $q g \rightarrow Z q$ and $q \bar{q} \rightarrow Z g $ . The Feynman diagrams for these processes are shown on the bottom and top respectively, of Figure ~\ref{fig:feynmanzjet}.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.60\textwidth]{visuals/feynmanZjet.png}
+\caption{The LO Feynman diagrams for (Top) The Compton Process (Bottom) Quark - Anti-Quark Annihilation, the top being far more likely to occur at LHC. }
+\label{fig:feynmanZjet}
+\end{figure}
+
+
+In Figure ~\ref{fig:quarkandgluoninzplusjet} it is noteworthy to realize that the bulk of the order $R^2$ corrections (black line) are composed of contributions from the simple ISR gluon as illustrated in Section ~\ref{sec:jetmassISR}
+
+
+
+\subsection{Groomed Jet Mass }\label{sec:jetmassgroomed}
+
+The jet mass distribution for soft-dropped jets differs from the plain jet because it lacks soft and collinear radiation contributions. It is shown in the Lund diagram in Figure ~\ref{fig:mmdtsoftdropLund} at LL accuracy, where the shaded red area is that vetoed and associated with Sudakov suppression and the red line is a line of constant jet $\rho$.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.60\textwidth]{visuals/mmdtsoftdropLund.png}
+\caption{Lund diagrams for : (a) The modified mass drop tagger, (b) The Soft-Drop prodecure . The dotted green line is the edge of the dropped region in both cases. }
+\label{fig:mmdtsoftdropLund}
+\end{figure}
+
+For the soft-dropped mass the LO cumulative distribution can be written as :\newline
+
+\begin{equation}
+\begin{aligned} \Sigma_{\mathrm{SD}}^{(\mathrm{LO})}(\rho) &=\frac{1}{\sigma_{0}} \int_{0}^{\rho} d \rho^{\prime} \frac{d \sigma}{d \rho^{\prime}}=1-\frac{1}{\sigma_{0}} \int_{\rho}^{1} d \rho^{\prime} \frac{d \sigma}{d \rho^{\prime}} & & \\ &\left(1-\frac{\alpha_{s} C_{F}}{\pi}\left[\frac{1}{2} \log ^{2}\left(\frac{1}{\rho}\right)-\frac{3}{4} \log \left(\frac{1}{\rho}\right)\right],\right.& \text { if } \quad \rho>z_{\mathrm{cut}} \\ 1-\frac{\alpha_{s} C_{F}}{\pi} &\left[\frac{1}{2} \log ^{2}\left(\frac{1}{\rho}\right)-\frac{1}{2+\beta} \log ^{2}\left(\frac{z_{\text {cut }}}{\rho}\right)-\frac{3}{4} \log \left(\frac{1}{\rho}\right)\right], & \text { if } \quad \rho<z_{\text {cut }} \end{aligned}
+\end{equation}
+
+at order $\alpha_s$~\cite{Marzani:2019hun}.
+
+Since many of the complications of the calculations, such as non-global logarithms, are eliminated by dropping the soft and collinear contributions theorists are able to analytically calculate the soft-drop groomed jet mass and perform an all-order resummation of the logarithms.
+
+\begin{equation}
+\Sigma_{\mathrm{SD}}(\rho)=\exp \left[-R_{\mathrm{SD}}(\rho)\right]
+\end{equation}
+
+
+
+\begin{equation}
+R_{\mathrm{SD}}(\rho)=\int_{0}^{1} \frac{d \theta^{2}}{\theta^{2}} d z P_{i}(z) \frac{\alpha_{s}\left(z \theta p_{t} R\right)}{2 \pi} \Theta\left(z \theta^{2}>\rho\right) \Theta\left(z>z_{\mathrm{cut}} \theta^{\beta}\right)
+\end{equation}
+
+
+Including the folling term accounts for a running coupling correction~\cite{Marzani:2019hun}
+
+\begin{equation}
+\alpha_{s}\left(z \theta p_{t} R\right)=\frac{\alpha_{s}\left(p_{t} R\right)}{1+2 \alpha_{s} \beta_{0} \log (z \theta)}
+\end{equation}
+
+
+Performing the integration retaining only hard-collinear branchings, Equation ~\ref{hard}, and only the leading double-logarithm contributions from soft and collinear emissions~\cite{Marzani:2019hun}, Equation ~\ref{soft}.
+
+
+
+\begin{equation}
+R_{\mathrm{SD}}^{(\mathrm{LL})}(\rho)=\frac{C_{i}}{2 \pi \alpha_{s} \beta_{0}^{2}}\left[\frac{2+\beta}{1+\beta} W\left(1-\frac{\lambda_{c}+(1+\beta) \lambda_{\rho}}{2+\beta}\right)-\frac{W\left(1-\lambda_{c}\right)}{1+\beta}-2 W\left(1-\frac{\lambda_{\rho}}{2}\right)\right.
+\end{equation}\label{soft}
+
+
+
+\begin{equation}
+\left.-2 \alpha_{s} \beta_{0} B_{i} \log \left(1-\frac{\lambda_{\rho}}{2}\right)\right]
+\end{equation}\label{hard}
+
+where
+
+\begin{equation}
+\lambda_{\rho}=2 \alpha_{s} \beta_{0} \log (1 / \rho), \quad \lambda_{c}=2 \alpha_{s} \beta_{0} \log \left(1 / z_{\mathrm{cut}}\right), \quad \text { and } \quad W(x)=x \log (x)
+\end{equation}
+
+
+
+Lastly, the expression can be expanded up to NNLL corrections~\cite{Marzani:2019hun}:
+
+\begin{equation}
+R_{\mathrm{SD}}^{(\mathrm{LL})}(\rho)=\frac{C_{i}}{2 \pi \alpha_{s} \beta_{0}^{2}}\left[\frac{2+\beta}{1+\beta} W\left(1-\frac{\lambda_{c}+(1+\beta) \lambda_{\rho}}{2+\beta}\right)-\frac{W\left(1-\lambda_{c}\right)}{1+\beta}-2 W\left(1-\frac{\lambda_{\rho}+\lambda_{B}}{2}\right)\right.
+\end{equation}
+
+
+\begin{equation}
+\left.+W\left(1-\lambda_{B}\right)\right]
+\end{equation}
+
+Define 
+\begin{equation}
+\lambda_{B}=-2 \alpha_{s} \beta_{0} B_{i}
+\end{equation}.
 
 
 
@@ -280,17 +438,6 @@ Higher order corrections to the hard process are nessessary in order to properly
 %https://arxiv.org/pdf/1803.06991.pdf
 %Jet Substructure at the Large HadronCollider :  Experimental Review
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % DY thesis https://cds.cern.ch/record/2018454/files/CERN-THESIS-2015-048.pdf
-\section{Jet Production Cross Sections}\label{sec:jetProdCrossSections}
-
-Jets are produced copiously at LHC and are involved in the final states signal and background of many interesting processes. By making measurements of the jet mass spectrum in all event types at all energies we are forming a more complete understanding of perturbative QCD.
-
-
-\begin{equation}
-\sigma=\sum_{a, b} \int_{0}^{1} d x_{a} d x_{b} \int d \Phi_{n} f_{a}^{h_{1}}\left(x_{a}, \mu_{F}\right) f_{b}^{h_{2}}\left(x_{b}, \mu_{F}\right) \frac{1}{2 \hat{s}}\left|\mathcal{M}_{a b \rightarrow n}\right|^{2}\left(\Phi_{n} ; \mu_{F}, \mu_{R}\right)
-\end{equation}
-
-The normalized differential cross section is measured in this analysis as described in ~\ref{sec:intro}.
-

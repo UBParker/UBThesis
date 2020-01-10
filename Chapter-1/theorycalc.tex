@@ -1,34 +1,74 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{Soft-Collinear Effective Theory}\label{sec:SCET}
-%https://arxiv.org/pdf/1410.1892.pdf
+\section{Factorization in Soft-Collinear Effective Theory}\label{sec:SCET}
+
+Factorization allows one to seperate QCD calculations into parts, which can be calculated individually, using different methods and then summed for a complete understanding of the event at in an energy regimes.
 
 
-Below the factorization structure of the double differential jet production cross section is displayed in the context of Soft-Collinear Effective Theory, SCET, following the framework for inclusive jet production $pp \rightarrow jet + X$ developed in for jets of  %https://arxiv.org/abs/1801.00790
+Below the factorization structure of the double differential jet production cross section is displayed in the context of Soft-Collinear Effective Theory, SCET, following the framework for inclusive jet production $pp \rightarrow jet + X$ developed for jets of radius $R <<1$ the tripl differential cross section can be defined ~\cite{Kang:2018vgn} as :
+
+
 
 \begin{equation}
-\frac{d \sigma}{ d p_{T} d m}=\sum_{a b c} f_{a}\left(x_{a}, \mu\right) \otimes f_{b}\left(x_{b}, \mu\right) \otimes H_{a b}^{c}\left(x_{a}, x_{b}, p_{T} / z, \mu\right) \otimes \mathcal{G}_{c}\left(z, p_{T} R, m, \mu, z_{\mathrm{cut}}, \beta\right)
+\frac{d \sigma}{d \eta d p_{T} d \tau_{a}}=\sum_{a b c} f_{a}\left(x_{a}, \mu\right) \otimes f_{b}\left(x_{b}, \mu\right) \otimes H_{a b}^{c}\left(x_{a}, x_{b}, \eta, p_{T} / z, \mu\right) \otimes \mathcal{G}_{c}\left(z, p_{T} R, \tau_{a}, \mu, z_{\mathrm{cut}}, \beta\right)
 \end{equation}
 % equation from here https://arxiv.org/pdf/1811.06983.pdf
 
-Jet and Soft Functions 
+
+In the above cross section equation: \newline
+
+$f_{a, b}$ represent the parton distribution functions tht give the probability of a given parton, of momentum fraction $x_{a,b}$, from a proton~\cite{Kang:2018vgn}.\newline
+
+$H_{a b}^{c}$ is the hard function describing the $a b \rightarrow c$ process, where $c$ is the final state parton, posessing mometum $\frac{\pt}{z}$, that fragments to become the observed jet. 
 
 
-Image of factorization in this context
+ $\boldsymbol{G}_{c}$ being the semi-inclusive jet function, which can be refactorized as follows :
+
+
+\begin{equation}
+\mathcal{G}_{c}\left(z, p_{T} R, \tau_{a}, \mu, z_{\mathrm{cut}}, \beta\right)=\sum_{i} \mathcal{H}_{c \rightarrow i}\left(z, p_{T} R, \mu\right) S_{i}^{\operatorname{tg}\left(z_{\mathrm{cu}} p_{T} R, \beta, \mu\right)}
+\end{equation}
+
+
+\begin{equation}
+\times \int d \tau_{a}^{C_{i}} d \tau_{a}^{S_{i}} \delta\left(\tau_{a}-\tau_{a}^{C_{i}}-\tau_{a}^{S_{i}}\right) C_{i}\left(\tau_{a}^{C_{i}}, p_{T}, \mu\right) S_{i}^{\operatorname{gr}}\left(\tau_{a}^{S_{i}}, p_{T}, R, \mu, z_{\mathrm{cut}}, \beta\right)
+\end{equation}
+
+%\Varangle
+In the above factorization the term $S_{i}^{t \mathrm{gr}}$ represents soft emissions that will always fail the soft drop citerion while the latter soft function accounts for soft emissions which may or may not pass depending on the values of the tunable parameters~\cite{Kang:2018vgn}.
+
+
+
+
+%\begin{figure}[htb]
+%\centering
+%\includegraphics[width=1.0\textwidth]{visuals/SCET-factorization.png}
+%\caption{Fatorization of the energy scales in a hard scatter interaction according to SCET ~\cite{Becher:2014oda}.}
+%\label{fig:scet}
+%\end{figure}
+
+%The hard, $H_{a b}^{c}$, function is represented by the black circle in Figure ~\ref{fig:scet} while the jet, $\boldsymbol{G}_{c}$ .
 
 %SCET-factorization
-~\cite{Becher:2014oda}
+%~\cite{Becher:2014oda}
 %https://arxiv.org/abs/1410.1892
-\begin{figure}[htb]
-\centering
-\includegraphics[width=1.0\textwidth]{visuals/SCET-factorization.png}
-\caption{Fatorization of the energy scales in a hard scatter interaction according to SCET ~\cite{Becher:2014oda}.}
-\label{fig:scet}
-\end{figure}
-discuss groomed jets in this context
 
-comparing groomed  (Jet) to ungroomed (Jet+Soft)
+
+%\section{Jet Production Cross Sections}\label{sec:jetProdCrossSections}
+
+%Jets are produced copiously at LHC and are involved in the final states signal and background of many interesting processes. By making measurements of the jet mass spectrum in all event types at all energies we are forming a more complete understanding of perturbative QCD.
+
+
+%\begin{equation}
+%\sigma=\sum_{a, b} \int_{0}^{1} d x_{a} d x_{b} \int d \Phi_{n} f_{a}^{h_{1}}\left(x_{a}, \mu_{F}\right) f_{b}^{h_{2}}\left(x_{b}, \mu_{F}\right) \frac{1}{2 \hat{s}}\left|\mathcal{M}_{a b \rightarrow n}\right|^{2}\left(\Phi_{n} ; \mu_{F}, \mu_{R}\right)
+%\end{equation}
+
+
+
+
+%The normalized differential cross section for the leading jet produced in association with a Z boson is measured in this analysis as described in Section~\ref{sec:intro}.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -27,11 +27,6 @@ Mrinal Dasgupta, Alessandro Fregoso, Simone Marzani, and Gavin~P. Salam.
 \newblock {Towards an understanding of jet substructure}.
 \newblock {\em JHEP}, 09:029, 2013.
 
-\bibitem{Becher:2014oda}
-Thomas Becher, Alessandro Broggio, and Andrea Ferroglia.
-\newblock {Introduction to Soft-Collinear Effective Theory}.
-\newblock {\em Lect. Notes Phys.}, 896:pp.1--206, 2015.
-
 \bibitem{Sirunyan:2017ulk}
 A.~M. Sirunyan et~al.
 \newblock {Particle-flow reconstruction and global event description with the
@@ -188,6 +183,11 @@ Andrew~J. Larkoski, Ian Moult, and Duff Neill.
   Jets}.
 \newblock {\em JHEP}, 09:143, 2015.
 
+\bibitem{Kang:2018vgn}
+Zhong-Bo Kang, Kyle Lee, Xiaohui Liu, and Felix Ringer.
+\newblock {Soft drop groomed jet angularities at the LHC}.
+\newblock {\em Phys. Lett.}, B793:41--47, 2019.
+
 \bibitem{Larkoski:2017fip}
 Andrew~J. Larkoski.
 \newblock {An Unorthodox Introduction to QCD}.
@@ -203,6 +203,12 @@ Vardan Khachatryan et~al.
 Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
 \newblock {FastJet user manual}.
 \newblock {\em Eur. Phys. J. C}, 72:1896, 2012.
+
+\bibitem{Sirunyan:2018fpa}
+A.~M. Sirunyan et~al.
+\newblock {Performance of the CMS muon detector and muon reconstruction with
+  proton-proton collisions at $\sqrt{s}=$ 13 TeV}.
+\newblock {\em JINST}, 13(06):P06015, 2018.
 
 \bibitem{Chatrchyan:2008zzk}
 S.~Chatrchyan et~al.

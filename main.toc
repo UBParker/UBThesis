@@ -11,31 +11,33 @@
 \contentsline {section}{\numberline {3.2}Jet Grooming}{14}
 \contentsline {section}{\numberline {3.3}Lund Jet Plane}{15}
 \contentsline {section}{\numberline {3.4}Jet Mass}{16}
-\contentsline {subsection}{\numberline {3.4.1}Plain Jet Mass }{16}
-\contentsline {section}{\numberline {3.5}Jet Production Cross Sections}{21}
-\contentsline {section}{\numberline {3.6}Soft-Collinear Effective Theory}{22}
-\contentsline {section}{\numberline {3.7}Jets Initiated by Quarks and Gluons }{23}
-\contentsline {chapter}{\numberline {4}CMS Experiment at LHC}{26}
-\contentsline {section}{\numberline {4.1}The Large Hadron Collider}{26}
-\contentsline {section}{\numberline {4.2}The CMS Detector}{26}
-\contentsline {subsection}{\numberline {4.2.1}Calorimeter Energy Resolution}{27}
-\contentsline {section}{\numberline {4.3}From Calorimeter Energy Deposits to Jets}{28}
-\contentsline {section}{\numberline {4.4}Muon Reconstruction}{28}
-\contentsline {chapter}{\numberline {5}Event Generation and Reconstruction}{30}
-\contentsline {section}{\numberline {5.1}Brief Introduction to Monte Carlo Event Generators}{30}
-\contentsline {section}{\numberline {5.2}Event Reconstruction with Particle Flow}{31}
-\contentsline {chapter}{\numberline {6}Measurement of the differential jet production cross section with respect to jet mass and transverse momentum in Z + Jet events from pp collisions at $\sqrt {s}$ = 13 TeV}{36}
-\contentsline {section}{\numberline {6.1}Introduction}{36}
-\contentsline {section}{\numberline {6.2}Data and MC}{37}
-\contentsline {section}{\numberline {6.3}Trigger}{41}
-\contentsline {section}{\numberline {6.4}Reconstruction and Selection}{42}
-\contentsline {section}{\numberline {6.5}Data to MC Comparisons}{49}
-\contentsline {section}{\numberline {6.6}Detector Response}{56}
-\contentsline {section}{\numberline {6.7}Uncertainties}{64}
-\contentsline {section}{\numberline {6.8}Unfolding}{69}
-\contentsline {section}{\numberline {6.9}Results}{80}
-\contentsline {section}{\numberline {6.10}Summary}{107}
-\contentsline {section}{\numberline {.1}2016 data results}{107}
-\contentsline {section}{\numberline {.2}2017 data results}{160}
-\contentsline {section}{\numberline {.3}2018 data results}{212}
-\contentsline {chapter}{\numberline {A}Relativistic Kinematics}{251}
+\contentsline {subsection}{\numberline {3.4.1}Plain Jet Mass }{19}
+\contentsline {subsection}{\numberline {3.4.2}Initial-State Radiation Contributions to Jet Mass }{22}
+\contentsline {subsection}{\numberline {3.4.3}Jet Mass in Proton-Proton $\rightarrow $ Z + jet }{24}
+\contentsline {subsection}{\numberline {3.4.4}Groomed Jet Mass }{24}
+\contentsline {section}{\numberline {3.5}Factorization in Soft-Collinear Effective Theory}{28}
+\contentsline {section}{\numberline {3.6}Jets Initiated by Quarks and Gluons }{29}
+\contentsline {chapter}{\numberline {4}CMS Experiment at LHC}{32}
+\contentsline {section}{\numberline {4.1}The Large Hadron Collider}{32}
+\contentsline {section}{\numberline {4.2}The CMS Detector}{32}
+\contentsline {subsection}{\numberline {4.2.1}Calorimeter Energy Resolution}{33}
+\contentsline {section}{\numberline {4.3}From Calorimeter Energy Deposits to Jets}{34}
+\contentsline {section}{\numberline {4.4}Muon Reconstruction}{34}
+\contentsline {chapter}{\numberline {5}Event Generation and Reconstruction}{36}
+\contentsline {section}{\numberline {5.1}Brief Introduction to Monte Carlo Event Generators}{36}
+\contentsline {section}{\numberline {5.2}Event Reconstruction with Particle Flow}{37}
+\contentsline {chapter}{\numberline {6}Measurement of the differential jet production cross section with respect to jet mass and transverse momentum in Z + Jet events from pp collisions at $\sqrt {s}$ = 13 TeV}{42}
+\contentsline {section}{\numberline {6.1}Introduction}{42}
+\contentsline {section}{\numberline {6.2}Data and MC}{43}
+\contentsline {section}{\numberline {6.3}Trigger}{47}
+\contentsline {section}{\numberline {6.4}Reconstruction and Selection}{48}
+\contentsline {section}{\numberline {6.5}Data to MC Comparisons}{55}
+\contentsline {section}{\numberline {6.6}Detector Response}{62}
+\contentsline {section}{\numberline {6.7}Uncertainties}{70}
+\contentsline {section}{\numberline {6.8}Unfolding}{75}
+\contentsline {section}{\numberline {6.9}Results}{86}
+\contentsline {section}{\numberline {6.10}Summary}{113}
+\contentsline {section}{\numberline {.1}2016 data results}{113}
+\contentsline {section}{\numberline {.2}2017 data results}{166}
+\contentsline {section}{\numberline {.3}2018 data results}{218}
+\contentsline {chapter}{\numberline {A}Relativistic Kinematics}{257}

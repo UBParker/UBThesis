@@ -9,12 +9,6 @@ A level-1 auxiliary file: Chapter-3/chap3.aux
 A level-1 auxiliary file: Chapter-4/chap4.aux
 A level-1 auxiliary file: Appendix-A/main.aux
 Database file #1: AN-18-240.bib
-Repeated entry---line 453 of file AN-18-240.bib
- : @article{Dreyer:2018nbf
- :                        ,
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "eq:sequRec"
-Warning--I didn't find a database entry for "Sirunyan:2018"
 Warning--empty journal in Frye:2016aiz
 Warning--empty journal in Kolodrubetz:2016dzb
 Warning--empty journal in Asquith:2018igt
@@ -26,45 +20,45 @@ Warning--empty journal in Sirunyan:2019dfx
 Warning--empty journal in CAaachen
 Warning--empty journal in EXO-15-002
 Warning--empty institution in CMS:2016eto
-You've used 60 entries,
+You've used 61 entries,
             1791 wiz_defined-function locations,
-            791 strings with 12725 characters,
-and the built_in function-call counts, 11989 in all, are:
-= -- 982
-> -- 590
+            792 strings with 12813 characters,
+and the built_in function-call counts, 12192 in all, are:
+= -- 998
+> -- 601
 < -- 3
-+ -- 221
-- -- 161
-* -- 793
-:= -- 2038
-add.period$ -- 181
-call.type$ -- 60
-change.case$ -- 58
++ -- 225
+- -- 164
+* -- 808
+:= -- 2073
+add.period$ -- 184
+call.type$ -- 61
+change.case$ -- 59
 chr.to.int$ -- 0
-cite$ -- 71
-duplicate$ -- 538
-empty$ -- 1183
-format.name$ -- 161
-if$ -- 2618
+cite$ -- 72
+duplicate$ -- 547
+empty$ -- 1203
+format.name$ -- 164
+if$ -- 2662
 int.to.chr$ -- 0
-int.to.str$ -- 60
-missing$ -- 59
-newline$ -- 303
-num.names$ -- 58
-pop$ -- 122
+int.to.str$ -- 61
+missing$ -- 60
+newline$ -- 308
+num.names$ -- 59
+pop$ -- 123
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 211
+skip$ -- 215
 stack$ -- 0
-substring$ -- 634
-swap$ -- 63
+substring$ -- 643
+swap$ -- 64
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 11
-while$ -- 102
-width$ -- 62
-write$ -- 642
-(There was 1 error message)
+while$ -- 104
+width$ -- 63
+write$ -- 653
+(There were 11 warnings)
